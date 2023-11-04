@@ -8,10 +8,20 @@ Este repositorio está organizado en diferentes ramas para facilitar el seguimie
 
 ### Ramas
 
-- **main**: Contiene la información general del curso, como este README.
-- **clase01**: Introduce los conceptos básicos de Java.
-- **clase02**: Profundiza en temas avanzados de Java.
-- **...** (y así sucesivamente para cada clase)
+curso-backend/
+│
+├── java/
+│   ├── leccion1/
+│   │    ├──ejemplo1.java
+│   │    ├──ejemplo1_final.java
+│   ├── leccion2/
+│   └── ...
+│
+├── nodejs/
+│   ├── leccion1/
+│   ├── leccion2/
+│   └── ...
+└── 
 
 ### Cómo Usar las Ramas
 
