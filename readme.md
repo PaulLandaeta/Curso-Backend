@@ -7,7 +7,7 @@ Bienvenido al curso de Backend, donde aprenderás a construir aplicaciones robus
 Este repositorio está organizado en diferentes ramas para facilitar el seguimiento del curso. Cada rama corresponde a una clase o tema específico.
 
 ### Ramas
-
+```
 curso-backend/
 │
 ├── java/
@@ -22,7 +22,7 @@ curso-backend/
 │   ├── leccion2/
 │   └── ...
 └── 
-
+```
 ### Cómo Usar las Ramas
 
 1. **Clonar el Repositorio**: Para empezar, debes clonar el repositorio a tu máquina local.
