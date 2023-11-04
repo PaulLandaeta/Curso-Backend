@@ -10,18 +10,43 @@ Este repositorio está organizado en diferentes ramas para facilitar el seguimie
 ```
 curso-backend/
 │
-├── java/
-│   ├── leccion1/
-│   │    ├──ejemplo1.java
-│   │    ├──ejemplo1_final.java
-│   ├── leccion2/
+├── README.md                  # Descripción general del curso y cómo navegar el repositorio.
+├── principles-and-acronyms/   # Carpeta para principios y acrónimos.
+│   ├── SOLID.md
+│   ├── KISS.md
+│   ├── DRY.md
+│   └── YAGNI.md
+│
+├── architecture-examples/     # Carpeta para ejemplos de arquitectura.
+│   ├── monolithic.md
+│   ├── microservices.md
+│   └── serverless.md
+│
+├── java/                      # Carpeta para lecciones de Java.
+│   ├── lesson1/               # Carpeta para Lección 1.
+│   │   ├── README.md          # Explicación de la lección 1.
+│   │   ├── example/           # Inicio del proyecto
+│   │   └── final/             # Código final de la lección 1.
+│   ├── lesson2/               # Carpeta para Lección 2.
+│   │   ├── README.md
+│   │   ├── example/
+│   │   └── final/
 │   └── ...
 │
-├── nodejs/
-│   ├── leccion1/
-│   ├── leccion2/
+├── nodejs/                    # Carpeta para lecciones de Node.js.
+│   ├── lesson1/               
+│   │   ├── README.md
+│   │   ├── example/
+│   │   └── final/
+│   ├── lesson2/
+│   │   ├── README.md
+│   │   ├── example/
+│   │   └── final/
 │   └── ...
-└── 
+│
+├── .gitignore                 
+└── LICENSE                    
+
 ```
 ### Cómo Usar las Ramas
 
