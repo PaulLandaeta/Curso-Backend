@@ -10,7 +10,7 @@ Este repositorio está organizado en diferentes ramas para facilitar el seguimie
 ```
 curso-backend/
 │
-├── README.md                  # Descripción general del curso y cómo navegar el repositorio.
+├── README.md                  # Descripción general del curso.
 ├── principles-and-acronyms/   # Carpeta para principios y acrónimos.
 │   ├── SOLID.md
 │   ├── KISS.md
@@ -72,19 +72,13 @@ curso-backend/
 
 ## Contenido del Curso
 
-- **Clase 01**: Introducción a Java
-  - Conceptos básicos: variables, operadores, estructuras de control, etc.
-  - Ejemplos y ejercicios.
+Este curso está dividido en varias secciones clave:
 
-- **Clase 02**: Java Avanzado
-  - Programación orientada a objetos, herencia, polimorfismo, etc.
-  - Ejemplos y ejercicios.
+- **Principios y Acrónimos de Programación**: Comprenderemos los fundamentos del desarrollo de software, incluyendo principios SOLID, KISS, DRY, y YAGNI.
+- **Ejemplos de Arquitecturas de Software**: Analizaremos diferentes estilos de arquitectura como monolítica, microservicios y sin servidor.
+- **Desarrollo en Java**: Sumergirnos en lecciones prácticas para construir aplicaciones backend robustas usando Java.
+- **Desarrollo en Node.js**: Aprenderemos a construir aplicaciones backend eficientes y escalables con Node.js.
 
-- **Clase 03**: Introducción a Node.js
-  - Conceptos básicos: npm, módulos, eventos, etc.
-  - Ejemplos y ejercicios.
-
-- **...** (y así sucesivamente)
 
 ## Contribuir
 
