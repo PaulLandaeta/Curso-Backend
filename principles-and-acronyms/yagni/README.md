@@ -49,3 +49,5 @@ class Car {
 }
 
 ```
+### Referencias
+Martin Fowler en YAGNI: [You Aren't Gonna Need It](https://martinfowler.com/bliki/Yagni.html)
