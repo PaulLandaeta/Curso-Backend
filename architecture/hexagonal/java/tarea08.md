@@ -31,6 +31,7 @@ Eres el arquitecto de software de una tienda de libros en línea. Se te ha pedid
 - Implementa adaptadores de entrada que permitan a los usuarios interactuar con tu sistema (por ejemplo, una API REST).
 - Implementa adaptadores de salida para interactuar con una base de datos simulada.
 
+```bash
 tienda-de-libros/
 │
 ├── src/
@@ -71,7 +72,7 @@ tienda-de-libros/
 │
 └── resources/
     ├── application.properties
-
+```
 
 - `src/`: Contiene el código fuente de la aplicación.
   - `application/`: Almacena las clases relacionadas con la lógica de la aplicación.
