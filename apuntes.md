@@ -67,9 +67,7 @@
         - Concepto: Escribir primero las pruebas y luego el codigo.
         - Aplicacion en Java/Node.js: Escribir primero las pruebas y luego el codigo.
 
-
-
 ## Arquitectura hexagonal
 - La arquitectura hexagonal es una arquitectura de software que permite crear aplicaciones independientes del framework, la interfaz de usuario y de la base de datos.
 - Su objetivo es separar la logica de negocio de los detalles tecnicos.
-- Tambien es conocida como puertos y adaptadores. Esto por que
+- Tambien es conocida como puertos y adaptadores. Esto por que 
