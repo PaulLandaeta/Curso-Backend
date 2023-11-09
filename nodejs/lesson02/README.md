@@ -45,6 +45,7 @@ Modifica tu package.json para usar ts-node-dev en el script de inicio. Por ejemp
     "start": "ts-node-dev --respawn --transpile-only src/index.ts"
 }
 ```
+```
 npm i uuid
 npm i --save-dev @types/uuid
 ```

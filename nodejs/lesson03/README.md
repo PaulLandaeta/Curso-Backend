@@ -12,7 +12,6 @@ src/
 ├── domain/               # Lógica de negocio (domain layer)
 │   ├── models/           # Modelos del dominio
 │   ├── entities/         # Interfaces de las entidades del dominio
-│   ├── models/           # Modelos del dominio
 │   └── interfaces/       # Interfaces del repositorio
 │
 ├── infrastructure/       # Implementaciones externas (infrastructure layer)
