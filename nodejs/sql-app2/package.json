@@ -1,0 +1,28 @@
+{
+  "name": "sql-app2",
+  "version": "1.0.0",
+  "description": "Backend para la gamificacion de la enseñanza de SQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "serve": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "UPB",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.9.0",
+    "@types/uuid": "^9.0.7",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2",
+    "uuid": "^9.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "typeorm": "^0.3.17"
+  }
+}
