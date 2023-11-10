@@ -1,6 +1,7 @@
 import { Request, Response, Router } from 'express';
 import { UserService } from '../../app/services/userService';
 import { UserDto } from '../../app/dtos/user.dto';
+import { CreateUserDTO } from '../../app/dtos/create.user.dto';
 
 export class UserController {
     public router: Router;
@@ -27,10 +28,7 @@ export class UserController {
 
     public async createUser(req: Request, res: Response): Promise<Response> {
         try {
-            // TODO: Convertir req.body a UserDto
-            // TODO: es posible usar el mismo DTO
-            console.log(req.body);
-            const userDto: UserDto = req.body;
+            const userDto: CreateUserDTO = req.body;
             const user = await this.userService.createUser(userDto);
             return res.status(201).json(user);
         } catch (error) {

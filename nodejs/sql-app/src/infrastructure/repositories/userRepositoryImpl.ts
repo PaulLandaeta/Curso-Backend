@@ -20,15 +20,15 @@ export class UserRepositoryImpl implements UserRepository {
             roleId: user.roleId
         });
 
-        await AppDataSource.getRepository(UserEntity).save(userEntity);
+        const userResponse = await AppDataSource.getRepository(UserEntity).save(userEntity);
         return new User({
-            id: userEntity.id,
-            username: userEntity.username,
-            email: userEntity.email,
-            passwordHash: userEntity.passwordHash,
-            createdAt: userEntity.createdAt,
-            lastLogin: userEntity.lastLogin,
-            roleId: userEntity.roleId
+            id: userResponse.id,
+            username: userResponse.username,
+            email: userResponse.email,
+            passwordHash: userResponse.passwordHash,
+            createdAt: userResponse.createdAt,
+            lastLogin: userResponse.lastLogin,
+            roleId: userResponse.roleId
         })
     }
 }
