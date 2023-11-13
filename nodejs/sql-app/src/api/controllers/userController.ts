@@ -2,6 +2,7 @@ import { Request, Response, Router } from 'express';
 import { UserService } from '../../app/services/userService';
 import { UserDto } from '../../app/dtos/user.dto';
 import { CreateUserDTO } from '../../app/dtos/create.user.dto';
+import logger from '../../infrastructure/logger/logger';
 
 export class UserController {
     public router: Router;
@@ -15,6 +16,8 @@ export class UserController {
     }
 
     public async getUserById(req: Request, res: Response): Promise<void> {
+        logger.info("estoy dentro del UserById Controller");
+        logger.debug("esto es un debug");
         const { id } = req.params;
         const userDto = await this.userService.getUserById(id);
 
