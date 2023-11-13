@@ -16,7 +16,7 @@ export class User {
     this.email = userEntity.email;
     this.passwordHash = userEntity.passwordHash;
     this.createdAt = userEntity.createdAt || new Date();
-    this.lastLogin = userEntity.lastLogin;
+    this.lastLogin = userEntity.lastLogin || new Date();
     this.roleId = userEntity.roleId;
   }
 }

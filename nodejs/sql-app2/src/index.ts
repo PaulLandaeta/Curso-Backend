@@ -17,7 +17,7 @@ AppDataSource.initialize().then(() => {
     const userService = new UserService(userRepository);
     //const userController = new UserController(userService);
 
-    //app.use('/users', userController.router);
+    // app.use('/users', userController.router);
 
     app.listen(PORT, () => {
         console.log(`Servidor ejecutándose en http://localhost:${PORT}`);
