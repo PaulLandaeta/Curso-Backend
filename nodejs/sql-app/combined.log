@@ -1,0 +1,105 @@
+{"level":"info","message":"Alguna información relevante"}
+{"level":"info","message":"::1 - - [13/Nov/2023:02:17:42 +0000] \"GET /users/1 HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\""}
+{"level":"info","message":"Alguna información relevante"}
+{"level":"info","message":"::1 - - [13/Nov/2023:02:27:44 +0000] \"GET /users/1 HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\""}
+{"level":"info","message":"Alguna información relevante"}
+{"level":"info","message":"::1 - - [13/Nov/2023:02:28:04 +0000] \"GET /users/1 HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\""}
+{"level":"info","message":"Alguna información relevante","timestamp":"2023-11-12 22:28:56"}
+{"level":"info","message":"::1 - - [13/Nov/2023:02:28:56 +0000] \"GET /users/1 HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\"","timestamp":"2023-11-12 22:28:56"}
+{"level":"info","message":"Alguna información relevante","timestamp":"2023-11-12 22:32:39"}
+{"level":"info","message":"::1 - - [13/Nov/2023:02:32:39 +0000] \"GET /users/1 HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\"","timestamp":"2023-11-12 22:32:39"}
+{"level":"info","message":"Alguna información relevante","timestamp":"2023-11-12 22:32:55"}
+{"level":"info","message":"::1 - - [13/Nov/2023:02:32:55 +0000] \"GET /users/1 HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\"","timestamp":"2023-11-12 22:32:55"}
+{"level":"info","message":"Alguna información relevante","timestamp":"2023-11-12 22:34:05"}
+{"level":"info","message":"::1 - - [13/Nov/2023:02:34:05 +0000] \"GET /users/1 HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\"","timestamp":"2023-11-12 22:34:05"}
+{"level":"info","message":"Alguna información relevante","timestamp":"2023-11-12 22:34:45"}
+{"level":"info","message":"::1 - - [13/Nov/2023:02:34:45 +0000] \"GET /users/1 HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\"","timestamp":"2023-11-12 22:34:45"}
+info:[12/Nov/2023:22:35:35 -0400] Alguna información relevante
+info:[12/Nov/2023:22:35:35 -0400] ::1 - - [13/Nov/2023:02:35:35 +0000] "GET /users/1 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[12/Nov/2023:22:35:40 -0400] Alguna información relevante
+info:[12/Nov/2023:22:35:40 -0400] ::1 - - [13/Nov/2023:02:35:40 +0000] "GET /users/1 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[12/Nov/2023:22:36:36 -0400] Alguna información relevante
+info:[12/Nov/2023:22:36:36 -0400] ::1 - - [13/Nov/2023:02:36:36 +0000] "GET /users/1 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info222:[12/Nov/2023:22:36:53 -0400] Alguna información relevante
+info222:[12/Nov/2023:22:36:54 -0400] ::1 - - [13/Nov/2023:02:36:54 +0000] "GET /users/1 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info222:[12/Nov/2023:22:37:15 -0400] Alguna información relevante
+info222:[12/Nov/2023:22:37:15 -0400] ::1 - - [13/Nov/2023:02:37:15 +0000] "GET /users/1 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info222:[12/Nov/2023:22:37:24 -0400] Alguna información relevante
+info222:[12/Nov/2023:22:37:24 -0400] ::1 - - [13/Nov/2023:02:37:24 +0000] "GET /users/1 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[12/Nov/2023:22:39:34 -0400] Alguna información relevante
+info:[12/Nov/2023:22:39:34 -0400] ::1 - - [13/Nov/2023:02:39:34 +0000] "GET /users/1 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[13/Nov/2023:12:44:49 -0400] Alguna información relevante
+info:[13/Nov/2023:12:44:49 -0400] ::1 - - [13/Nov/2023:16:44:49 +0000] "GET /users/1 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: estoy dentro del UserById Controller {"timestamp":"13/Nov/2023:12:46:50 -0400"}
+info: Alguna información relevante {"timestamp":"13/Nov/2023:12:46:50 -0400"}
+info: ::1 - - [13/Nov/2023:16:46:50 +0000] "GET /users/1 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"13/Nov/2023:12:46:50 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"13/Nov/2023:13:01:10 -0400"}
+info: Alguna información relevante {"timestamp":"13/Nov/2023:13:01:10 -0400"}
+info: ::1 - - [13/Nov/2023:17:01:10 +0000] "GET /users/1 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"13/Nov/2023:13:01:10 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"13/Nov/2023:13:02:04 -0400"}
+debug: esto es un debug {"timestamp":"13/Nov/2023:13:02:04 -0400"}
+info: Alguna información relevante {"timestamp":"13/Nov/2023:13:02:04 -0400"}
+info: ::1 - - [13/Nov/2023:17:02:04 +0000] "GET /users/1 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"13/Nov/2023:13:02:04 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"13/Nov/2023:13:52:32 -0400"}
+info: Alguna información relevante {"timestamp":"13/Nov/2023:13:52:32 -0400"}
+info: ::1 - - [13/Nov/2023:17:52:32 +0000] "GET /users/1 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"13/Nov/2023:13:52:32 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"13/Nov/2023:13:52:33 -0400"}
+info: Alguna información relevante {"timestamp":"13/Nov/2023:13:52:33 -0400"}
+info: ::1 - - [13/Nov/2023:17:52:33 +0000] "GET /users/1 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"13/Nov/2023:13:52:33 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"13/Nov/2023:13:58:33 -0400"}
+debug: esto es un debug {"timestamp":"13/Nov/2023:13:58:33 -0400"}
+info: Alguna información relevante {"timestamp":"13/Nov/2023:13:58:33 -0400"}
+info: ::1 - - [13/Nov/2023:17:58:33 +0000] "GET /users/1 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"13/Nov/2023:13:58:33 -0400"}
+debug: Intentando eliminar al usuario con ID: 2 {"timestamp":"13/Nov/2023:21:55:39 -0400"}
+debug: UserService: Intentando eliminar al usuario con ID: 2 {"timestamp":"13/Nov/2023:21:55:39 -0400"}
+error: UserRepository: Error al eliminar al usuario con ID: 2. {"timestamp":"13/Nov/2023:21:55:39 -0400"}
+error: Error al eliminar al usuario con ID: 2. Error: Error: Usuario no encontrado {"timestamp":"13/Nov/2023:21:55:39 -0400"}
+info: ::1 - - [14/Nov/2023:01:55:39 +0000] "DELETE /users/2 HTTP/1.1" 500 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:21:55:39 -0400"}
+debug: Intentando eliminar al usuario con ID: 1 {"timestamp":"13/Nov/2023:21:56:45 -0400"}
+debug: UserService: Intentando eliminar al usuario con ID: 1 {"timestamp":"13/Nov/2023:21:56:45 -0400"}
+info: Usuario con ID: 1 eliminado con éxito {"timestamp":"13/Nov/2023:21:56:45 -0400"}
+info: ::1 - - [14/Nov/2023:01:56:45 +0000] "DELETE /users/1 HTTP/1.1" 200 42 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:21:56:45 -0400"}
+info: ::1 - - [14/Nov/2023:02:14:12 +0000] "PUT /users/b4f8c0ee-795e-4728-a10b-2a8caa7d1eae HTTP/1.1" 400 1173 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:22:14:12 -0400"}
+info: ::1 - - [14/Nov/2023:02:14:49 +0000] "PUT /users/b4f8c0ee-795e-4728-a10b-2a8caa7d1eae HTTP/1.1" 201 228 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:22:14:49 -0400"}
+debug: Intentando actualizar al usuario con ID: undefined {"timestamp":"13/Nov/2023:22:15:19 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: undefined {"timestamp":"13/Nov/2023:22:15:19 -0400"}
+error: Error al actualizar al usuario con ID: undefined. Error: QueryFailedError: ER_DUP_ENTRY: Duplicate entry 'nuevoemail@example.com' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f' {"timestamp":"13/Nov/2023:22:15:19 -0400"}
+info: ::1 - - [14/Nov/2023:02:15:19 +0000] "PUT /users/b4f8c0ee-795e-4728-a10b-2a8caa7d1eae HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:22:15:19 -0400"}
+debug: Intentando actualizar al usuario con ID: b4f8c0ee-795e-4728-a10b-2a8caa7d1eae {"timestamp":"13/Nov/2023:22:16:22 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: b4f8c0ee-795e-4728-a10b-2a8caa7d1eae {"timestamp":"13/Nov/2023:22:16:22 -0400"}
+error: Error al actualizar al usuario con ID: b4f8c0ee-795e-4728-a10b-2a8caa7d1eae. Error: QueryFailedError: ER_DUP_ENTRY: Duplicate entry 'nuevoemail@example.com' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f' {"timestamp":"13/Nov/2023:22:16:22 -0400"}
+info: ::1 - - [14/Nov/2023:02:16:22 +0000] "PUT /users/b4f8c0ee-795e-4728-a10b-2a8caa7d1eae HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:22:16:22 -0400"}
+debug: Intentando actualizar al usuario con ID: b4f8c0ee-795e-4728-a10b-2a8caa7d1eae {"timestamp":"13/Nov/2023:22:16:37 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: b4f8c0ee-795e-4728-a10b-2a8caa7d1eae {"timestamp":"13/Nov/2023:22:16:37 -0400"}
+info: Usuario con ID: b4f8c0ee-795e-4728-a10b-2a8caa7d1eae actualizado con éxito {"timestamp":"13/Nov/2023:22:16:37 -0400"}
+info: ::1 - - [14/Nov/2023:02:16:37 +0000] "PUT /users/b4f8c0ee-795e-4728-a10b-2a8caa7d1eae HTTP/1.1" 200 233 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:22:16:37 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"13/Nov/2023:22:51:46 -0400"}
+debug: esto es un debug {"timestamp":"13/Nov/2023:22:51:46 -0400"}
+info: Alguna información relevante {"timestamp":"13/Nov/2023:22:51:46 -0400"}
+info: ::1 - - [14/Nov/2023:02:51:46 +0000] "GET /users/b4f8c0ee-795e-4728-a10b-2a8caa7d1eae HTTP/1.1" 404 28 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:22:51:46 -0400"}
+info: ::1 - - [14/Nov/2023:03:15:28 +0000] "POST /roles HTTP/1.1" 201 100 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:23:15:28 -0400"}
+info: ::1 - - [14/Nov/2023:03:30:02 +0000] "POST /users/b4f8c0ee-795e-4728-a10b-2a8caa7d1eae HTTP/1.1" 404 182 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:23:30:02 -0400"}
+info: ::1 - - [14/Nov/2023:03:30:02 +0000] "POST /users/b4f8c0ee-795e-4728-a10b-2a8caa7d1eae HTTP/1.1" 404 182 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:23:30:02 -0400"}
+info: ::1 - - [14/Nov/2023:03:30:36 +0000] "POST /users HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:23:30:36 -0400"}
+info: ::1 - - [14/Nov/2023:03:30:59 +0000] "POST /users HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:23:30:59 -0400"}
+info: ::1 - - [14/Nov/2023:03:31:39 +0000] "POST /users HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:23:31:39 -0400"}
+info: ::1 - - [14/Nov/2023:03:33:16 +0000] "POST /users HTTP/1.1" 201 320 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:23:33:16 -0400"}
+info: ::1 - - [14/Nov/2023:03:34:14 +0000] "POST /users HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:23:34:14 -0400"}
+info: ::1 - - [14/Nov/2023:03:35:24 +0000] "POST /users HTTP/1.1" 400 31 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:23:35:24 -0400"}
+info: ::1 - - [14/Nov/2023:03:38:52 +0000] "POST /users HTTP/1.1" 400 31 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:23:38:52 -0400"}
+info: ::1 - - [14/Nov/2023:03:50:01 +0000] "GET /roles/ddf6d54e-d263-4fc1-bd60-6b01a249945e HTTP/1.1" 200 100 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:23:50:01 -0400"}
+info: ::1 - - [14/Nov/2023:03:52:04 +0000] "GET /roles/ddf6d54e-d263-4fc1-bd60-6b01a249945e HTTP/1.1" 200 100 "-" "PostmanRuntime/7.35.0" {"timestamp":"13/Nov/2023:23:52:04 -0400"}
+info: ::1 - - [14/Nov/2023:16:40:19 +0000] "POST /roles HTTP/1.1" 201 106 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:12:40:19 -0400"}
+info: ::1 - - [14/Nov/2023:16:40:31 +0000] "GET /roles/1e8f7b0b-9e5d-4e42-ac2f-f4f5aeec191a HTTP/1.1" 200 106 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:12:40:31 -0400"}
+info: ::1 - - [14/Nov/2023:16:41:05 +0000] "POST /users HTTP/1.1" 400 31 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:12:41:05 -0400"}
+info: ::1 - - [14/Nov/2023:16:41:12 +0000] "POST /users HTTP/1.1" 201 301 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:12:41:12 -0400"}
+info: Alguna información relevante {"timestamp":"14/Nov/2023:12:42:09 -0400"}
+info: ::1 - - [14/Nov/2023:16:42:09 +0000] "GET /users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 121 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:12:42:09 -0400"}
+debug: Intentando actualizar al usuario con ID: 563d0adf-469f-4d2f-977d-36c828b901ee {"timestamp":"14/Nov/2023:12:43:27 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 563d0adf-469f-4d2f-977d-36c828b901ee {"timestamp":"14/Nov/2023:12:43:27 -0400"}
+info: Usuario con ID: 563d0adf-469f-4d2f-977d-36c828b901ee actualizado con éxito {"timestamp":"14/Nov/2023:12:43:27 -0400"}
+info: ::1 - - [14/Nov/2023:16:43:27 +0000] "PUT /users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 209 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:12:43:27 -0400"}
+debug: Intentando actualizar al usuario con ID: 563d0adf-469f-4d2f-977d-36c828b901ee {"timestamp":"14/Nov/2023:12:44:34 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 563d0adf-469f-4d2f-977d-36c828b901ee {"timestamp":"14/Nov/2023:12:44:34 -0400"}
+info: Usuario con ID: 563d0adf-469f-4d2f-977d-36c828b901ee actualizado con éxito {"timestamp":"14/Nov/2023:12:44:34 -0400"}
+info: ::1 - - [14/Nov/2023:16:44:34 +0000] "PUT /users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 198 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:12:44:34 -0400"}

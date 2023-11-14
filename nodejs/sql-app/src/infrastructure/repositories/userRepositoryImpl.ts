@@ -3,27 +3,33 @@ import { UserEntity } from "../entities/userEntity";
 import { AppDataSource } from "../config/dataSource";
 import { User } from "../../domain/models/user";
 import logger from "../logger/logger";
+import { RoleEntity } from "../entities/roleEntity";
 
 export class UserRepositoryImpl implements UserRepository {
     async findById(id: string): Promise<User | null> {
         logger.info('Alguna información relevante');
-        const userEntity = await AppDataSource.getRepository(UserEntity).findOneBy({ id });
-        return userEntity ? new User(userEntity) : null;
+        const userRepository = AppDataSource.getRepository(UserEntity);
+        const user = await userRepository.findOne({
+            where: { id },
+            relations: ['role']
+        });
+        return user ? new User(user) : null;
     }
 
     async createUser(user: User): Promise<User> {
-        // TODO: set user values 
+        const userRepository = AppDataSource.getRepository(UserEntity);
 
-        const userEntity = AppDataSource.getRepository(UserEntity).create({
+        const userEntity = userRepository.create({
             username: user.username,
             email: user.email,
             passwordHash: user.passwordHash,
             createdAt: user.createdAt || new Date(),
             lastLogin: user.lastLogin || null,
-            roleId: user.roleId
+            role: user.role
         });
 
-        const userResponse = await AppDataSource.getRepository(UserEntity).save(userEntity);
+        const userResponse = await userRepository.save(userEntity);
+
         return new User({
             id: userResponse.id,
             username: userResponse.username,
@@ -31,7 +37,39 @@ export class UserRepositoryImpl implements UserRepository {
             passwordHash: userResponse.passwordHash,
             createdAt: userResponse.createdAt,
             lastLogin: userResponse.lastLogin,
-            roleId: userResponse.roleId
-        })
+            role: userResponse.role
+        });
+    }
+
+    async deleteUser(id: string): Promise<void> {
+
+        const repository = AppDataSource.getRepository(UserEntity);
+        const user = await repository.findOneBy({ id });
+
+        if (!user) {
+            logger.error(`UserRepository: Error al eliminar al usuario con ID: ${id}.`);
+            throw new Error('Usuario no encontrado');
+        }
+
+        await repository.remove(user);
+    }
+
+    async updateUser(id: string, updateData: Partial<User>): Promise<User> {
+        const repository = AppDataSource.getRepository(UserEntity);
+        const user = await repository.findOneBy({ id });
+
+        if (!user) {
+            logger.error(`UserRepository: Error al modificar al usuario con ID: ${id}.`);
+            throw new Error('Usuario no encontrado');
+        }
+
+        // if (user.role.id !== updateData.roleId)
+        // get role a partir del updateData.roleId
+        // if (!role) 
+        // user.role = role
+
+        repository.merge(user, updateData);
+        const updatedUser = await repository.save(user);
+        return updatedUser;
     }
 }

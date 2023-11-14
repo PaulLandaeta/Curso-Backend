@@ -1,3 +1,4 @@
+import { IRoleEntity } from '../entities/IRoleEntity';
 import { IUserEntity } from '../entities/IUserEntity';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -8,7 +9,7 @@ export class User {
     email: string;
     createdAt: Date;
     lastLogin: Date | null;
-    roleId: string;
+    role: IRoleEntity;
 
     constructor(userEntity: IUserEntity) {
         this.id = userEntity.id || uuidv4();
@@ -17,6 +18,6 @@ export class User {
         this.passwordHash = userEntity.passwordHash;
         this.createdAt = userEntity.createdAt || new Date();
         this.lastLogin = userEntity.lastLogin;
-        this.roleId = userEntity.roleId;
+        this.role = userEntity.role;
     }
 }

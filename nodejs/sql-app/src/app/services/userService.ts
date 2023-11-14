@@ -1,15 +1,16 @@
 import { IUserEntity } from "../../domain/entities/IUserEntity";
+import { RoleRepository } from "../../domain/interfaces/roleRepository";
 import { UserRepository } from "../../domain/interfaces/userRepository";
 import { User } from "../../domain/models/user";
+import logger from "../../infrastructure/logger/logger";
 import { CreateUserDTO } from "../dtos/create.user.dto";
 import { UserDto } from '../dtos/user.dto';
 
 export class UserService {
-    constructor(private userRepository: UserRepository) { }
+    constructor(private userRepository: UserRepository, private roleRepository: RoleRepository) { }
 
     async getUserById(id: string): Promise<UserDto | null> {
-        // log.info
-        // log.debug // id
+
         const user = await this.userRepository.findById(id);
         // log.debug user
 
@@ -26,18 +27,32 @@ export class UserService {
     }
 
     async createUser(userDto: CreateUserDTO): Promise<User> {
-        // info 
+        const role = await this.roleRepository.findById(userDto.roleId);
+        if (!role) {
+            throw new Error('Rol no encontrado');
+        }
+
 
         const userEntity: IUserEntity = {
             username: userDto.username,
             email: userDto.email,
             passwordHash: userDto.password,
-            roleId: userDto.roleId,
             createdAt: new Date(),
             lastLogin: null,
+            role
         };
         const newUser = new User(userEntity);
-        // logger.debug newUser // creating UserEntity 
+
         return this.userRepository.createUser(newUser);
+    }
+
+    async deleteUser(userId: string): Promise<void> {
+        logger.debug(`UserService: Intentando eliminar al usuario con ID: ${userId}`);
+        await this.userRepository.deleteUser(userId);
+    }
+
+    async updateUser(userId: string, updateData: Partial<CreateUserDTO>): Promise<User> {
+        logger.debug(`UserService: Intentando actualizar al usuario con ID: ${userId}`);
+        return this.userRepository.updateUser(userId, updateData);
     }
 }
