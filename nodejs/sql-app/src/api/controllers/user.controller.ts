@@ -27,8 +27,6 @@ export class UserController {
       res.status(404).json({ message: 'User not found' });
       return;
     }
-
-    res.json(userDto);
   }
 
   public async createUser(req: Request, res: Response): Promise<Response> {
