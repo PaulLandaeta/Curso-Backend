@@ -1,6 +1,6 @@
-export interface UserDto {
-  id: string;
+export interface DeleteUserDto {
   username: string;
   email: string;
+  password: string;
   roleId: string;
 }
