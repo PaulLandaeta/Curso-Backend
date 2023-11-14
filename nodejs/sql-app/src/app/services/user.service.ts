@@ -29,6 +29,7 @@ export class UserService {
       lastLogin: null,
       roleId: newUser.roleId
     };
-    return await this.userRepository.createNewUser(newEntity);
+    const nuevaEntidad = new User(newEntity);
+    return await this.userRepository.createNewUser(nuevaEntidad);
   }
 }
