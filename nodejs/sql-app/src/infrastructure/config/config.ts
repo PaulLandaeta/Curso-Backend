@@ -3,23 +3,22 @@ dotenv.config();
 
 export const env = {
   port: process.env.ENV_PORT || 3000,
+  environment: process.env.ENV || 'develop'
 };
 
-interface DbInterface {
-  type: "mysql" | "mariadb" | "postgres" | "cockroachdb" | "sqlite" | "mssql" | "sap" | "oracle" | "cordova" | "nativescript" | "react-native" | "sqljs" | "mongodb" | "aurora-mysql" | "spanner" | string;
-  host: string;
-  port: number
-  user: string;
-  password: string;
-  database_name: string;
+export const db = {
+  port: process.env.BD_PORT || 3306,
+  type: process.env.BD_TYPE || 'mysql',
+  username: process.env.BD_USER || 'root',
+  password: process.env.BD_PASS || 'root',
+  host: process.env.BD_HOST || 'localhost',
+  database: process.env.BD_NAME || 'app',
 }
 
+export const lg = {
+  level: process.env.LG_LEVEL || 'info'
+}
 
-export const db: DbInterface = {
-  type: process.env.DB_TYPE || 'mysql',
-  host: process.env.DB_HOST || 'localhost',
-  port: Number(process.env.DB_PORT) || 3306,
-  user: process.env.DB_USER || 'root',
-  database_name: process.env.DB_DATABASE_NAME || 'hola mundo',
-  password: process.env.DB_PASS || 'admin123$',
-};
+export const jwt = {
+  secretKey: process.env.JWT_SECRET || 'your_secret_key'
+}

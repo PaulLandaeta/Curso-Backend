@@ -2,5 +2,6 @@ export interface UserDto {
   id: string;
   username: string;
   email: string;
-  roleId: string;
+  lastLogin: Date | null;
+  token: string | null;
 }

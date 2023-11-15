@@ -1,15 +1,15 @@
-import winston, { format } from 'winston';
+import winston from 'winston';
+import { lg, env } from '../config/config';
 
-const myFormat = format.printf(({ level, message, timestamp, error }) => {
-  const errorMessage = error ? `\n${error.stack}` : '';
-  return `${level}:[${timestamp}] ${message}${errorMessage}`;
+const myFormat = winston.format.printf(({ level, message, timestamp }) => {
+  return `${level}:[${timestamp}] ${message}`;
 });
 
 const logger = winston.createLogger({
-  level: 'info',
-  format: format.combine(
-    format.timestamp({ format: "DD/MMM/YYYY:HH:mm:ss ZZ" }),
-    myFormat
+  level: lg.level,
+  format: winston.format.combine(
+    winston.format.timestamp({ format: "DD/MMM/YYYY:HH:mm:ss ZZ" }),
+    winston.format.simple(),//myFormat
   ),
   transports: [
     new winston.transports.File({ filename: 'error.log', level: 'error' }),
@@ -17,10 +17,10 @@ const logger = winston.createLogger({
   ],
 });
 
-if (process.env.NODE_ENV !== 'production') {
+if (env.environment !== 'production') {
   logger.add(new winston.transports.Console({
-    format: format.combine(
-      format.timestamp({ format: "DD/MMM/YYYY:HH:mm:ss ZZ" }),
+    format: winston.format.combine(
+      winston.format.timestamp({ format: "DD/MMM/YYYY:HH:mm:ss ZZ" }),
       myFormat
     ),
   }));

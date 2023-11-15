@@ -1,0 +1,4 @@
+error: UserRepository: Error al eliminar al usuario con ID: 2. {"timestamp":"13/Nov/2023:21:55:39 -0400"}
+error: Error al eliminar al usuario con ID: 2. Error: Error: Usuario no encontrado {"timestamp":"13/Nov/2023:21:55:39 -0400"}
+error: Error al actualizar al usuario con ID: undefined. Error: QueryFailedError: ER_DUP_ENTRY: Duplicate entry 'nuevoemail@example.com' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f' {"timestamp":"13/Nov/2023:22:15:19 -0400"}
+error: Error al actualizar al usuario con ID: b4f8c0ee-795e-4728-a10b-2a8caa7d1eae. Error: QueryFailedError: ER_DUP_ENTRY: Duplicate entry 'nuevoemail@example.com' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f' {"timestamp":"13/Nov/2023:22:16:22 -0400"}
