@@ -11,6 +11,8 @@ import { env } from './infrastructure/config/config';
 import { RoleRepositoryImpl } from './infrastructure/repositories/roleRepositoryImpl';
 import { RoleService } from './app/services/roleService';
 import { RoleController } from './api/controllers/roleController';
+import { AuthController } from './api/controllers/authController';
+import { AuthService } from './app/services/authService';
 
 AppDataSource.initialize().then(() => {
     const app = express();
@@ -32,9 +34,12 @@ AppDataSource.initialize().then(() => {
     const userRepository = new UserRepositoryImpl();
     const userService = new UserService(userRepository, roleRepository);
     const userController = new UserController(userService);
-
+    const authService = new AuthService(userRepository);
+    const authController = new AuthController(authService);
+    
     app.use('/users', userController.router);
     app.use('/roles', roleController.router);
+    app.use('/auth', authController.router);
 
     app.listen(PORT, () => {
         console.log(`Servidor ejecutándose en http://localhost:${PORT}`);

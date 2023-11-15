@@ -104,3 +104,10 @@ debug: UserService: Intentando actualizar al usuario con ID: 563d0adf-469f-4d2f-
 info: Usuario con ID: 563d0adf-469f-4d2f-977d-36c828b901ee actualizado con éxito {"timestamp":"14/Nov/2023:12:44:34 -0400"}
 info: ::1 - - [14/Nov/2023:16:44:34 +0000] "PUT /users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 198 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:12:44:34 -0400"}
 info: ::1 - - [14/Nov/2023:17:38:48 +0000] "POST /users HTTP/1.1" 201 347 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:38:48 -0400"}
+info: ::1 - - [15/Nov/2023:13:19:34 +0000] "POST /auth/login HTTP/1.1" 200 6 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:09:19:34 -0400"}
+info: ::1 - - [15/Nov/2023:13:22:56 +0000] "POST /auth/login HTTP/1.1" 200 6 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:09:22:56 -0400"}
+info: ::1 - - [15/Nov/2023:13:24:18 +0000] "POST /auth/login HTTP/1.1" 200 6 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:09:24:18 -0400"}
+info: ::1 - - [15/Nov/2023:13:33:55 +0000] "POST /auth/login HTTP/1.1" 200 194 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:09:33:55 -0400"}
+info: ::1 - - [15/Nov/2023:13:40:25 +0000] "POST /auth/login HTTP/1.1" 200 506 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:09:40:25 -0400"}
+info: ::1 - - [15/Nov/2023:13:44:17 +0000] "POST /auth/login HTTP/1.1" 200 506 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:09:44:17 -0400"}
+info: ::1 - - [15/Nov/2023:13:47:08 +0000] "POST /auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:09:47:08 -0400"}

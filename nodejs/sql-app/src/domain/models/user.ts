@@ -10,6 +10,7 @@ export class User {
     createdAt: Date;
     lastLogin: Date | null;
     role: IRoleEntity;
+    token: string | null;
 
     constructor(userEntity: Partial<IUserEntity>) {
         this.id = userEntity.id || uuidv4();
@@ -21,8 +22,4 @@ export class User {
         this.role = userEntity.role;
     }
 
-    public login(): string {
-        
-        return 'hola';
-    }
 }
