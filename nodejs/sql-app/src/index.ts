@@ -14,7 +14,7 @@ AppDataSource.initialize().then(() => {
 
   dotenv.config();
 
-  console.log(process.env.ENV); // localhost
+  console.log(process.env.ENV);
 
   app.use(
     morgan("combined", {
@@ -28,12 +28,6 @@ AppDataSource.initialize().then(() => {
   app.get('/', (req: Request, res: Response) => {
     res.send('¡Hola Mundo con Express y TypeScript ssssss!');
   });
-
-  const userRepository = new UserRepositoryImpl();
-  const userService = new UserService(userRepository);
-  const userController = new UserController(userService);
-
-  app.use('/users', userController.router);
 
   routes(app);
 

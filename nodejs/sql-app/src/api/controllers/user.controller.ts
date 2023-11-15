@@ -11,7 +11,6 @@ export class UserController {
   public router: Router;
   private userService: UserService;
 
-
   constructor(userService: UserService) {
     this.userService = userService;
     this.router = Router();
@@ -75,5 +74,7 @@ export class UserController {
   public routes() {
     this.router.post('/', this.createUser.bind(this));
     this.router.get('/:id', this.getUserById.bind(this));
+    this.router.patch(':id', this.updateUserById.bind(this));
+    this.router.delete(':id', this.deleteUserById.bind(this));
   }
 }

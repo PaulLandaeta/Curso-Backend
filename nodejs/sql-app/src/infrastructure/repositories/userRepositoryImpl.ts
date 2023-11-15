@@ -5,13 +5,13 @@ import { User } from "../../domain/models/user";
 import { UserDto } from "../../app/dtos/user.dto";
 
 export class UserRepositoryImpl implements UserRepository {
-    updateUserById(id: string, user: User): Promise<UserDto> {
-        throw new Error("Method not implemented.");
-    }
-    deleteUserById(id: string, user: User): Promise<UserDto> {
+    async updateUserById(id: string, user: User): Promise<UserDto> {
         throw new Error("Method not implemented.");
     }
 
+    async deleteUserById(id: string): Promise<UserDto> {
+        throw new Error("Method not implemented.");
+    }
 
     async findById(id: string): Promise<User | null> {
         const userEntity = await AppDataSource.getRepository(UserEntity).findOneBy({ id });
