@@ -6,17 +6,16 @@ import { AppDataSource } from "../config/dataSource";
 import { User } from "../../domain/models/user";
 import logger from "../logger/logger";
 import { RoleEntity } from "../entities/roleEntity";
-import { UserDto } from "../../app/dtos/user.dto";
 
 export class UserRepositoryImpl implements UserRepository {
-    async updateUserById(id: string, user: User): Promise<UserDto> {
-        throw new Error("Method not implemented.");
+    async findAll(): Promise<User[]> {
+        const userRepository = AppDataSource.getRepository(UserEntity);
+        const users = await userRepository.find({
+            relations: ['role']
+        });
+        return users.map(user => new User(user));
     }
-
-    async deleteUserById(id: string): Promise<UserDto> {
-        throw new Error("Method not implemented.");
-    }
-
+    
     async findById(id: string): Promise<User | null> {
         logger.info('Alguna información relevante');
         const userRepository = AppDataSource.getRepository(UserEntity);

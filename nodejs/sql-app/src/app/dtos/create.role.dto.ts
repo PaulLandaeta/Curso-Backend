@@ -1,5 +1,5 @@
-export interface CreateRoleDto {
-  id?: string;
-  name: string;
-  description: string;
+export interface CreateRoleDTO {
+    id?: string;
+    name: string;
+    description: string;
 }

@@ -6,8 +6,11 @@ import { jwt as jwtConfig } from '../../infrastructure/config/config';
 import jwt from 'jsonwebtoken';
 import { UserDto } from "../dtos/user.dto";
 import { User } from "../../domain/models/user";
+import { Encrypt } from './../utils/encrypt';
+import bcrypt from 'bcrypt';
+
 export class AuthService {
-    constructor(private userRepository: UserRepository) { }
+    constructor(private userRepository: UserRepository, private encrypt: Encrypt) { }
 
     async login(loginDTO: LoginDTO): Promise<UserDto> {
         const userEntity: Partial<IUserEntity> = {
@@ -16,17 +19,28 @@ export class AuthService {
         };
         const user: User = await this.userRepository.findByEmail(userEntity.email);
         if (!user) {
-            //TODO: create an error deberia ser error ?
+            logger.error(`El usuario con email: ${userEntity.email} no existe`);
+            throw new Error('El email o la contraseña son incorrectos');
         }
-        // TODO: deberia estar en este lugar ?  
-        const token = jwt.sign({ userId: user.id }, jwtConfig.secretKey, { expiresIn: '1h' });
+
+        const isPasswordValid = await bcrypt.compare(userEntity.passwordHash, user.passwordHash);
+        if (!isPasswordValid){
+            logger.error(`La contraseña del usuario es incorrecta`);
+            throw new Error('El email o la contraseña son incorrectos');
+        }
+
+        const token = this.encrypt.encrypt({userId: user.id});
         user.token = token;
+        user.lastLogin = new Date();
+
+        const userUpdated = await this.userRepository.updateUser(user.id, user);
+
         // TODO: se deberia modificar el token y tambien el lastlogin
         return {
-            id: user.id,
-            username: user.username,
-            email: user.email,
-            lastLogin: user.lastLogin,
+            id: userUpdated.id,
+            username: userUpdated.username,
+            email: userUpdated.email,
+            lastLogin: userUpdated.lastLogin,
             token: user.token
         };
     }

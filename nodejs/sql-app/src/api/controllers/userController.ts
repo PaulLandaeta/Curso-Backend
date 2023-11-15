@@ -1,9 +1,8 @@
 import { Request, Response, Router } from 'express';
 import { UserService } from '../../app/services/userService';
 import { UserDto } from '../../app/dtos/user.dto';
-import { CreateUserDto } from '../../app/dtos/create.user.dto';
+import { CreateUserDTO } from '../../app/dtos/create.user.dto';
 import logger from '../../infrastructure/logger/logger';
-import { showError, showInfo, showInfoResponse } from '../../infrastructure/logger/message.format';
 
 export class UserController {
     public router: Router;
@@ -16,12 +15,17 @@ export class UserController {
         this.routes();
     }
 
+    // get all users
+    public async getUsers(req: Request, res: Response): Promise<void> {
+        const users: UserDto[] = await this.userService.getUsers();
+        res.json(users);
+    }
+
     public async getUserById(req: Request, res: Response): Promise<void> {
         const { id } = req.params;
         const userDto = await this.userService.getUserById(id);
 
         if (!userDto) {
-            logger.error(showError(404));
             res.status(404).json({ message: 'User not found' });
             return;
         }
@@ -31,10 +35,9 @@ export class UserController {
 
     public async createUser(req: Request, res: Response): Promise<Response> {
         try {
-            const userDto: CreateUserDto = req.body;
+            const userDto: CreateUserDTO = req.body;
             const user = await this.userService.createUser(userDto);
-            logger.info(showInfo(201, user));
-            return showInfoResponse(201, user, res);
+            return res.status(201).json(user);
         } catch (error) {
             if (error instanceof Error) {
                 console.log(error.message);
@@ -75,6 +78,7 @@ export class UserController {
     public routes() {
         this.router.get('/:id', this.getUserById.bind(this));
         this.router.post('/', this.createUser.bind(this));
+        this.router.get('/', this.getUsers.bind(this));
         this.router.delete('/:userId', this.deleteUser.bind(this));
         this.router.put('/:userId', this.updateUser.bind(this));
     }

@@ -1,6 +1,6 @@
-export interface CreateUserDto {
-  username: string;
-  email: string;
-  password: string;
-  roleId: string;
+export interface CreateUserDTO {
+    username: string;
+    email: string;
+    password: string;
+    roleId: string;
 }
