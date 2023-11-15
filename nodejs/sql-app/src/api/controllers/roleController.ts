@@ -4,6 +4,7 @@ import { CreateUserDTO } from '../../app/dtos/create.user.dto';
 import logger from '../../infrastructure/logger/logger';
 import { RoleService } from '../../app/services/roleService';
 import { CreateRoleDTO } from '../../app/dtos/create.role.dto';
+import { showErrorResponse, showInfoResponse } from '../../infrastructure/logger/message.format';
 
 export class RoleController {
     public router: Router;
@@ -19,10 +20,12 @@ export class RoleController {
         try {
             const roleDto: CreateRoleDTO = req.body;
             const role = await this.roleService.createRole(roleDto);
-            return res.status(201).json(role);
+            // return res.status(201).json(role);
+            return showInfoResponse(201, role, res);
         } catch (error) {
             console.log(error);
-            return res.status(400).json({ message: error });
+            // return res.status(400).json({ message: error });
+            return showErrorResponse(400, res, error);
         }
     }
 

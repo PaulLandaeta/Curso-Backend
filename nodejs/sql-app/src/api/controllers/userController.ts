@@ -4,6 +4,7 @@ import { UserDto } from '../../app/dtos/user.dto';
 import { CreateUserDTO } from '../../app/dtos/create.user.dto';
 import logger from '../../infrastructure/logger/logger';
 import { verifyTokenMiddleware } from '../middleware/verifyToken';
+import { showErrorResponse, showInfoResponse } from '../../infrastructure/logger/message.format';
 
 export class UserController {
     public router: Router;
@@ -28,7 +29,8 @@ export class UserController {
         const userDto = await this.userService.getUserById(id);
 
         if (!userDto) {
-            res.status(404).json({ message: 'User not found' });
+            // res.status(404).json({ message: 'User not found' });
+            showErrorResponse(404, res);
             return;
         }
 
@@ -39,13 +41,16 @@ export class UserController {
         try {
             const userDto: CreateUserDTO = req.body;
             const user = await this.userService.createUser(userDto);
-            return res.status(201).json(user);
+            // return res.status(201).json(user);
+            return showInfoResponse(201, user, res);
         } catch (error) {
             if (error instanceof Error) {
                 console.log(error.message);
-                return res.status(400).json({ message: error.message });
+                // return res.status(400).json({ message: error.message });
+                return showErrorResponse(400, res, error.message);
             }
-            return res.status(400).json({ message: error });
+            // return res.status(400).json({ message: error });
+            return showErrorResponse(400, res, error);
 
         }
     }
@@ -56,10 +61,12 @@ export class UserController {
             logger.debug(`Intentando eliminar al usuario con ID: ${userId}`);
             await this.userService.deleteUser(userId);
             logger.info(`Usuario con ID: ${userId} eliminado con éxito`);
-            return res.status(200).json({ message: 'Usuario eliminado con éxito' });
+            // return res.status(200).json({ message: 'Usuario eliminado con éxito' });
+            return showInfoResponse(200, userId, res);
         } catch (error) {
             logger.error(`Error al eliminar al usuario con ID: ${userId}. Error: ${error}`);
-            return res.status(500).json({ message: error });
+            // return res.status(500).json({ message: error });
+            return showErrorResponse(500, res, error);
         }
     }
 
@@ -70,10 +77,12 @@ export class UserController {
             logger.debug(`Intentando actualizar al usuario con ID: ${userId}`);
             const updatedUser = await this.userService.updateUser(userId, updateData);
             logger.info(`Usuario con ID: ${userId} actualizado con éxito`);
-            return res.status(200).json({ user: updatedUser });
+            // return res.status(200).json({ user: updatedUser });
+            return showInfoResponse(200, { user: updatedUser }, res);
         } catch (error) {
             logger.error(`Error al actualizar al usuario con ID: ${userId}. Error: ${error}`);
-            return res.status(500).json({ message: 'Error al actualizar el usuario' });
+            // return res.status(500).json({ message: 'Error al actualizar el usuario' });
+            return showErrorResponse(500, res, { message: 'Error al actualizar el usuario' });
         }
     };
 
