@@ -10,7 +10,7 @@ export const db = {
     port: process.env.BD_PORT || 3306,
     type: process.env.BD_TYPE || 'mysql',
     username: process.env.BD_USER || 'root',
-    password: process.env.BD_PASS ||  'root',
+    password: process.env.BD_PASS || 'root',
     host: process.env.BD_HOST || 'localhost',
     database: process.env.BD_NAME || 'app',
 }
@@ -20,5 +20,6 @@ export const lg = {
 }
 
 export const jwt = {
-    secretKey:process.env.JWT_SECRET || 'your_secret_key'
+    secretKey: process.env.JWT_SECRET || 'your_secret_key',
+    expirationTime: process.env.JWT_TIME_EXPIRED || '1h'
 }

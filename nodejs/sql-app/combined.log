@@ -111,3 +111,51 @@ info: ::1 - - [15/Nov/2023:13:33:55 +0000] "POST /auth/login HTTP/1.1" 200 194 "
 info: ::1 - - [15/Nov/2023:13:40:25 +0000] "POST /auth/login HTTP/1.1" 200 506 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:09:40:25 -0400"}
 info: ::1 - - [15/Nov/2023:13:44:17 +0000] "POST /auth/login HTTP/1.1" 200 506 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:09:44:17 -0400"}
 info: ::1 - - [15/Nov/2023:13:47:08 +0000] "POST /auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:09:47:08 -0400"}
+info: ::1 - - [15/Nov/2023:14:22:23 +0000] "POST /auth/login HTTP/1.1" 404 150 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:10:22:23 -0400"}
+info: ::1 - - [15/Nov/2023:14:22:31 +0000] "POST /api/auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:10:22:31 -0400"}
+info: ::1 - - [15/Nov/2023:14:51:30 +0000] "POST /api/auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:10:51:30 -0400"}
+info: ::1 - - [15/Nov/2023:14:52:09 +0000] "GET /users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 404 181 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:10:52:09 -0400"}
+info: Alguna información relevante {"timestamp":"15/Nov/2023:10:52:19 -0400"}
+info: ::1 - - [15/Nov/2023:14:52:19 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 123 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:10:52:19 -0400"}
+info: ::1 - - [15/Nov/2023:14:52:23 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:10:52:23 -0400"}
+info: Alguna información relevante {"timestamp":"15/Nov/2023:10:52:27 -0400"}
+info: ::1 - - [15/Nov/2023:14:52:27 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 123 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:10:52:27 -0400"}
+info: Alguna información relevante {"timestamp":"15/Nov/2023:11:04:18 -0400"}
+info: ::1 - - [15/Nov/2023:15:04:18 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 123 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:11:04:18 -0400"}
+info: Alguna información relevante {"timestamp":"15/Nov/2023:11:04:55 -0400"}
+info: ::1 - - [15/Nov/2023:15:04:55 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 123 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:11:04:55 -0400"}
+info: ::1 - - [15/Nov/2023:15:27:14 +0000] "POST /api/auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:11:27:14 -0400"}
+info: ::1 - - [15/Nov/2023:15:27:17 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:11:27:17 -0400"}
+info: ::1 - - [15/Nov/2023:15:27:18 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:11:27:18 -0400"}
+info: ::1 - - [15/Nov/2023:15:28:00 +0000] "POST /api/auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:11:28:00 -0400"}
+info: ::1 - - [15/Nov/2023:15:28:15 +0000] "POST /auth/login HTTP/1.1" 404 150 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:11:28:15 -0400"}
+info: Alguna información relevante {"timestamp":"15/Nov/2023:11:28:20 -0400"}
+info: ::1 - - [15/Nov/2023:15:28:20 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 123 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:11:28:20 -0400"}
+info: ::1 - - [15/Nov/2023:16:33:40 +0000] "POST /api/auth/login HTTP/1.1" 404 154 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:12:33:40 -0400"}
+info: ::1 - - [15/Nov/2023:16:33:57 +0000] "POST /auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:12:33:57 -0400"}
+error: El usuario con el email: paul.landaeta.2@example.com no existe {"timestamp":"15/Nov/2023:12:41:24 -0400"}
+error: There is an error in the login process El email o el password son incorrectos {"stack":"Error: El email o el password son incorrectos\n    at AuthService.<anonymous> (/Users/plandaeta/dev/upb/curso-backend/nodejs/sql-app/src/app/services/authService.ts:20:18)\n    at Generator.next (<anonymous>)\n    at fulfilled (/Users/plandaeta/dev/upb/curso-backend/nodejs/sql-app/src/app/services/authService.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"15/Nov/2023:12:41:24 -0400"}
+info: ::1 - - [15/Nov/2023:16:41:24 +0000] "POST /auth/login HTTP/1.1" 400 52 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:12:41:24 -0400"}
+info: ::1 - - [15/Nov/2023:17:12:32 +0000] "POST /auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:12:32 -0400"}
+info: ::1 - - [15/Nov/2023:17:14:11 +0000] "POST /auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:14:11 -0400"}
+info: ::1 - - [15/Nov/2023:17:14:13 +0000] "POST /auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:14:13 -0400"}
+info: ::1 - - [15/Nov/2023:17:14:15 +0000] "POST /auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:14:15 -0400"}
+info: ::1 - - [15/Nov/2023:17:19:06 +0000] "POST /auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:19:06 -0400"}
+info: ::1 - - [15/Nov/2023:17:19:08 +0000] "POST /auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:19:08 -0400"}
+info: ::1 - - [15/Nov/2023:17:19:09 +0000] "POST /auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:19:09 -0400"}
+info: ::1 - - [15/Nov/2023:17:19:09 +0000] "POST /auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:19:09 -0400"}
+info: ::1 - - [15/Nov/2023:17:19:35 +0000] "POST /auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:19:35 -0400"}
+info: ::1 - - [15/Nov/2023:17:19:43 +0000] "POST /auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:19:43 -0400"}
+info: ::1 - - [15/Nov/2023:17:20:31 +0000] "POST /auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:20:31 -0400"}
+error: La contraseña es incorrecta : paul.landaeta.1@example.com {"timestamp":"15/Nov/2023:13:20:58 -0400"}
+error: There is an error in the login process El email o el password son incorrectos {"stack":"Error: El email o el password son incorrectos\n    at AuthService.<anonymous> (/Users/plandaeta/dev/upb/curso-backend/nodejs/sql-app/src/app/services/authService.ts:29:19)\n    at Generator.next (<anonymous>)\n    at fulfilled (/Users/plandaeta/dev/upb/curso-backend/nodejs/sql-app/src/app/services/authService.ts:5:58)","timestamp":"15/Nov/2023:13:20:58 -0400"}
+info: ::1 - - [15/Nov/2023:17:20:58 +0000] "POST /auth/login HTTP/1.1" 400 52 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:20:58 -0400"}
+error: La contraseña es incorrecta : paul.landaeta.1@example.com {"timestamp":"15/Nov/2023:13:22:42 -0400"}
+error: There is an error in the login process El email o el password son incorrectos {"stack":"Error: El email o el password son incorrectos\n    at AuthService.<anonymous> (/Users/plandaeta/dev/upb/curso-backend/nodejs/sql-app/src/app/services/authService.ts:32:19)\n    at Generator.next (<anonymous>)\n    at fulfilled (/Users/plandaeta/dev/upb/curso-backend/nodejs/sql-app/src/app/services/authService.ts:5:58)","timestamp":"15/Nov/2023:13:22:42 -0400"}
+info: ::1 - - [15/Nov/2023:17:22:42 +0000] "POST /auth/login HTTP/1.1" 400 52 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:22:42 -0400"}
+info: ::1 - - [15/Nov/2023:17:23:18 +0000] "POST /auth/login HTTP/1.1" 200 326 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:23:18 -0400"}
+error: La contraseña es incorrecta : paul.landaeta.1@example.com {"timestamp":"15/Nov/2023:13:23:32 -0400"}
+error: There is an error in the login process El email o el password son incorrectos {"stack":"Error: El email o el password son incorrectos\n    at AuthService.<anonymous> (/Users/plandaeta/dev/upb/curso-backend/nodejs/sql-app/src/app/services/authService.ts:32:19)\n    at Generator.next (<anonymous>)\n    at fulfilled (/Users/plandaeta/dev/upb/curso-backend/nodejs/sql-app/src/app/services/authService.ts:5:58)","timestamp":"15/Nov/2023:13:23:32 -0400"}
+info: ::1 - - [15/Nov/2023:17:23:32 +0000] "POST /auth/login HTTP/1.1" 400 52 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:23:32 -0400"}
+info: ::1 - - [15/Nov/2023:17:26:00 +0000] "POST /auth/login HTTP/1.1" 200 145 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:26:00 -0400"}
+info: ::1 - - [15/Nov/2023:17:26:16 +0000] "POST /auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:26:16 -0400"}

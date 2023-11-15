@@ -13,6 +13,8 @@ import { RoleService } from './app/services/roleService';
 import { RoleController } from './api/controllers/roleController';
 import { AuthController } from './api/controllers/authController';
 import { AuthService } from './app/services/authService';
+import { apiRoutes } from './api/controllers/apiRoutes';
+import { EncryptImpl } from './infrastructure/utils/encrypt.jwt';
 
 AppDataSource.initialize().then(() => {
     const app = express();
@@ -28,15 +30,19 @@ AppDataSource.initialize().then(() => {
     app.get('/', (req: Request, res: Response) => {
         res.send('Servidor Up');
     });
+
+    const encrypt = new EncryptImpl();
+
     const roleRepository = new RoleRepositoryImpl();
     const roleService = new RoleService(roleRepository);
     const roleController = new RoleController(roleService);
     const userRepository = new UserRepositoryImpl();
     const userService = new UserService(userRepository, roleRepository);
     const userController = new UserController(userService);
-    const authService = new AuthService(userRepository);
+    const authService = new AuthService(userRepository, encrypt);
     const authController = new AuthController(authService);
     
+    // app.use('/api', apiRoutes());
     app.use('/users', userController.router);
     app.use('/roles', roleController.router);
     app.use('/auth', authController.router);
