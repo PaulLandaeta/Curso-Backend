@@ -3,7 +3,7 @@ import { UserService } from '../../app/services/userService';
 import { UserDto } from '../../app/dtos/user.dto';
 import { CreateUserDTO } from '../../app/dtos/create.user.dto';
 import logger from '../../infrastructure/logger/logger';
-import { verifyTokenMiddleware } from '../middleware/verifyToken';
+import { verifyTokenMiddleware } from './../middleware/verifyToken';
 
 export class UserController {
     public router: Router;
@@ -16,9 +16,14 @@ export class UserController {
         this.routes();
     }
 
+    // get all users
+    public async getUsers(req: Request, res: Response): Promise<void> {
+        const users: UserDto[] = await this.userService.getUsers();
+        res.json(users);
+    }
+
     public async getUserById(req: Request, res: Response): Promise<void> {
         const { id } = req.params;
-        console.log('testing=====', req.user_id);
         const userDto = await this.userService.getUserById(id);
 
         if (!userDto) {
@@ -74,6 +79,7 @@ export class UserController {
     public routes() {
         this.router.get('/:id', verifyTokenMiddleware, this.getUserById.bind(this));
         this.router.post('/', this.createUser.bind(this));
+        this.router.get('/', this.getUsers.bind(this));
         this.router.delete('/:userId', this.deleteUser.bind(this));
         this.router.put('/:userId', this.updateUser.bind(this));
     }

@@ -1,6 +1,7 @@
 import { Request, Response, Router } from 'express';
 import { LoginDTO } from '../../app/dtos/login.dto';
 import { AuthService } from '../../app/services/authService';
+import { log } from 'console';
 import logger from '../../infrastructure/logger/logger';
 
 export class AuthController {

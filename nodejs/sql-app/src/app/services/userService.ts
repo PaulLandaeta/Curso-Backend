@@ -9,6 +9,23 @@ import { UserDto } from '../dtos/user.dto';
 export class UserService {
     constructor(private userRepository: UserRepository, private roleRepository: RoleRepository) { }
 
+    // get all users
+    async getUsers(): Promise<UserDto[]> {
+        const users = await this.userRepository.findAll();
+
+        const usersResponse: UserDto[] = users.map((user: User) => {
+            const userDto: UserDto = {
+                id: user.id,
+                username: user.username,
+                email: user.email,
+                lastLogin: user.lastLogin
+            }
+            return userDto;
+        });
+
+        return usersResponse;
+    }
+
     async getUserById(id: string): Promise<UserDto | null> {
 
         const user = await this.userRepository.findById(id);
