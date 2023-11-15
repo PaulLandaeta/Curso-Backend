@@ -11,7 +11,7 @@ export class User {
     lastLogin: Date | null;
     role: IRoleEntity;
 
-    constructor(userEntity: IUserEntity) {
+    constructor(userEntity: Partial<IUserEntity>) {
         this.id = userEntity.id || uuidv4();
         this.username = userEntity.username;
         this.email = userEntity.email;
@@ -19,5 +19,10 @@ export class User {
         this.createdAt = userEntity.createdAt || new Date();
         this.lastLogin = userEntity.lastLogin;
         this.role = userEntity.role;
+    }
+
+    public login(): string {
+        
+        return 'hola';
     }
 }

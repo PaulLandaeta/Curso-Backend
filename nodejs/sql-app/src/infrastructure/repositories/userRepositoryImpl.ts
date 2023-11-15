@@ -1,3 +1,5 @@
+import bcrypt from "bcrypt";
+
 import { UserRepository } from "../../domain/interfaces/userRepository";
 import { UserEntity } from "../entities/userEntity";
 import { AppDataSource } from "../config/dataSource";
@@ -16,13 +18,24 @@ export class UserRepositoryImpl implements UserRepository {
         return user ? new User(user) : null;
     }
 
+    async findByEmail(email: string): Promise<User | null> {
+        const userRepository = AppDataSource.getRepository(UserEntity);
+        const user = await userRepository.findOne({
+            where: { email },
+            relations: ['role']
+        });
+        return user ? new User(user) : null;
+    }
+
     async createUser(user: User): Promise<User> {
         const userRepository = AppDataSource.getRepository(UserEntity);
 
+        const salt = bcrypt.genSaltSync(10);
+        const hash = bcrypt.hashSync(user.passwordHash, salt);
         const userEntity = userRepository.create({
             username: user.username,
             email: user.email,
-            passwordHash: user.passwordHash,
+            passwordHash: hash,
             createdAt: user.createdAt || new Date(),
             lastLogin: user.lastLogin || null,
             role: user.role

@@ -103,3 +103,4 @@ debug: Intentando actualizar al usuario con ID: 563d0adf-469f-4d2f-977d-36c828b9
 debug: UserService: Intentando actualizar al usuario con ID: 563d0adf-469f-4d2f-977d-36c828b901ee {"timestamp":"14/Nov/2023:12:44:34 -0400"}
 info: Usuario con ID: 563d0adf-469f-4d2f-977d-36c828b901ee actualizado con éxito {"timestamp":"14/Nov/2023:12:44:34 -0400"}
 info: ::1 - - [14/Nov/2023:16:44:34 +0000] "PUT /users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 198 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:12:44:34 -0400"}
+info: ::1 - - [14/Nov/2023:17:38:48 +0000] "POST /users HTTP/1.1" 201 347 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:38:48 -0400"}
