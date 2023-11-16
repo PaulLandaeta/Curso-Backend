@@ -1,0 +1,122 @@
+{"level":"info","message":"::1 - - [13/Nov/2023:17:09:07 +0000] \"POST /users HTTP/1.1\" 201 113 \"-\" \"PostmanRuntime/7.34.0\""}
+{"level":"info","message":"::1 - - [13/Nov/2023:17:20:43 +0000] \"GET / HTTP/1.1\" 200 11 \"-\" \"PostmanRuntime/7.34.0\""}
+info:[13/Nov/2023:14:09:16 -0400] Creando un nuevo usuario
+info:[13/Nov/2023:14:09:16 -0400] Creando un nuevo usuario en UserService
+debug:[13/Nov/2023:14:09:16 -0400] Usuario creado con éxito en UserService
+debug:[13/Nov/2023:14:09:16 -0400] Usuario creado con éxito
+info:[13/Nov/2023:14:15:35 -0400] Creando un nuevo usuario
+info:[13/Nov/2023:14:15:35 -0400] Creando un nuevo usuario en UserService
+debug:[13/Nov/2023:14:15:35 -0400] Usuario creado con éxito en UserService
+debug:[13/Nov/2023:14:15:35 -0400] Usuario creado con éxito
+info:[13/Nov/2023:14:15:35 -0400] ::1 - - [13/Nov/2023:18:15:35 +0000] "POST /users HTTP/1.1" 201 113 "-" "PostmanRuntime/7.34.0"
+info:[14/Nov/2023:12:12:03 -0400] ::1 - - [14/Nov/2023:16:12:03 +0000] "GET / HTTP/1.1" 200 45 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:12:14:30 -0400] ::1 - - [14/Nov/2023:16:14:30 +0000] "GET / HTTP/1.1" 200 45 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:12:15:49 -0400] Estoy dentro del create Rol
+debug:[14/Nov/2023:12:15:49 -0400] prueba de si funca el debug
+info:[14/Nov/2023:12:15:49 -0400] Creando usuario en Repository
+debug:[14/Nov/2023:12:15:49 -0400] Datos del nuevo usuario: 
+error:[14/Nov/2023:12:15:49 -0400] Error en Create rol No metadata for "RolEntity" was found.
+info:[14/Nov/2023:12:15:49 -0400] ::1 - - [14/Nov/2023:16:15:49 +0000] "POST /roles HTTP/1.1" 400 66 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:12:16:46 -0400] Estoy dentro del create Rol
+debug:[14/Nov/2023:12:16:46 -0400] prueba de si funca el debug
+info:[14/Nov/2023:12:16:46 -0400] Creando usuario en Repository
+debug:[14/Nov/2023:12:16:46 -0400] Datos del nuevo usuario: 
+error:[14/Nov/2023:12:16:46 -0400] Error en Create rol No metadata for "RolEntity" was found.
+info:[14/Nov/2023:12:16:46 -0400] ::1 - - [14/Nov/2023:16:16:46 +0000] "POST /roles HTTP/1.1" 400 66 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:12:17:44 -0400] Estoy dentro del create Rol
+debug:[14/Nov/2023:12:17:44 -0400] prueba de si funca el debug
+info:[14/Nov/2023:12:17:44 -0400] Creando usuario en Repository
+debug:[14/Nov/2023:12:17:44 -0400] Datos del nuevo usuario: 
+error:[14/Nov/2023:12:17:44 -0400] Error en Create rol No metadata for "RolEntity" was found.
+info:[14/Nov/2023:12:17:44 -0400] ::1 - - [14/Nov/2023:16:17:44 +0000] "POST /roles HTTP/1.1" 400 66 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:12:18:38 -0400] ::1 - - [14/Nov/2023:16:18:38 +0000] "GET /roles HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:12:18:41 -0400] ::1 - - [14/Nov/2023:16:18:41 +0000] "GET /roles HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:12:18:43 -0400] ::1 - - [14/Nov/2023:16:18:43 +0000] "GET /roles HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:12:18:58 -0400] ::1 - - [14/Nov/2023:16:18:58 +0000] "GET /rol HTTP/1.1" 404 142 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:12:19:02 -0400] ::1 - - [14/Nov/2023:16:19:02 +0000] "GET /roles HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:12:20:31 -0400] Creando un nuevo usuario en UserService
+error:[14/Nov/2023:12:20:33 -0400] Error al crear el usuario en UserService: QueryFailedError: ER_DUP_ENTRY: Duplicate entry 'ejemplo3@localhost' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f'
+error:[14/Nov/2023:12:20:33 -0400] Error en Create user ER_DUP_ENTRY: Duplicate entry 'ejemplo3@localhost' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f'
+info:[14/Nov/2023:12:20:33 -0400] ::1 - - [14/Nov/2023:16:20:33 +0000] "POST /users HTTP/1.1" 400 1174 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:12:20:40 -0400] Creando un nuevo usuario en UserService
+debug:[14/Nov/2023:12:20:40 -0400] Usuario creado con éxito en UserService
+info:[14/Nov/2023:12:20:40 -0400] ::1 - - [14/Nov/2023:16:20:40 +0000] "POST /users HTTP/1.1" 201 113 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:12:20:48 -0400] Estoy dentro del create Rol
+debug:[14/Nov/2023:12:20:48 -0400] prueba de si funca el debug
+info:[14/Nov/2023:12:20:48 -0400] Creando usuario en Repository
+debug:[14/Nov/2023:12:20:48 -0400] Datos del nuevo usuario: 
+error:[14/Nov/2023:12:20:48 -0400] Error en Create rol No metadata for "RolEntity" was found.
+info:[14/Nov/2023:12:20:48 -0400] ::1 - - [14/Nov/2023:16:20:48 +0000] "POST /roles HTTP/1.1" 400 66 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:12:21:37 -0400] Estoy dentro del create Rol
+debug:[14/Nov/2023:12:21:37 -0400] prueba de si funca el debug
+info:[14/Nov/2023:12:21:37 -0400] Creando usuario en Repository
+debug:[14/Nov/2023:12:21:37 -0400] Datos del nuevo usuario: 
+error:[14/Nov/2023:12:21:37 -0400] Error en Create rol No metadata for "RolEntity" was found.
+info:[14/Nov/2023:12:21:37 -0400] ::1 - - [14/Nov/2023:16:21:37 +0000] "POST /roles HTTP/1.1" 400 66 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:12:25:05 -0400] Estoy dentro del create Rol
+debug:[14/Nov/2023:12:25:05 -0400] prueba de si funca el debug
+info:[14/Nov/2023:12:25:05 -0400] Creando usuario en Repository
+debug:[14/Nov/2023:12:25:05 -0400] Datos del nuevo usuario: 
+debug:[14/Nov/2023:12:25:05 -0400] Datos del nuevo usuario: 
+info:[14/Nov/2023:12:25:05 -0400] ::1 - - [14/Nov/2023:16:25:05 +0000] "POST /roles HTTP/1.1" 201 90 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:12:26:06 -0400] Creando un nuevo usuario en UserService
+debug:[14/Nov/2023:12:26:06 -0400] Usuario creado con éxito en UserService
+info:[14/Nov/2023:12:26:06 -0400] ::1 - - [14/Nov/2023:16:26:06 +0000] "POST /users HTTP/1.1" 201 113 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:12:42:43 -0400] ::1 - - [14/Nov/2023:16:42:43 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:12:43:03 -0400] ::1 - - [14/Nov/2023:16:43:03 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0"
+info: ::1 - - [14/Nov/2023:17:04:25 +0000] "GET / HTTP/1.1" 200 11 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:04:25 -0400"}
+info: ::1 - - [14/Nov/2023:17:04:29 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:04:29 -0400"}
+info: ::1 - - [14/Nov/2023:17:04:33 +0000] "GET /user HTTP/1.1" 404 143 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:04:33 -0400"}
+info: ::1 - - [14/Nov/2023:17:04:43 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:04:43 -0400"}
+info: ::1 - - [14/Nov/2023:17:05:01 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:05:01 -0400"}
+info: ::1 - - [14/Nov/2023:17:05:46 +0000] "POST /users HTTP/1.1" 400 31 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:05:46 -0400"}
+info: ::1 - - [14/Nov/2023:17:05:51 +0000] "POST /roles HTTP/1.1" 201 90 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:05:51 -0400"}
+info: ::1 - - [14/Nov/2023:17:06:03 +0000] "POST /users HTTP/1.1" 201 287 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:06:03 -0400"}
+info: ::1 - - [14/Nov/2023:17:06:07 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:06:07 -0400"}
+info: ::1 - - [14/Nov/2023:17:06:08 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:06:08 -0400"}
+info: ::1 - - [14/Nov/2023:17:06:09 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:06:09 -0400"}
+info: ::1 - - [14/Nov/2023:17:06:10 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:06:10 -0400"}
+info: ::1 - - [14/Nov/2023:17:06:10 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:06:10 -0400"}
+info: ::1 - - [14/Nov/2023:17:06:11 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:06:11 -0400"}
+info: ::1 - - [14/Nov/2023:17:06:11 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:06:11 -0400"}
+info: ::1 - - [14/Nov/2023:17:06:12 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:06:12 -0400"}
+info: ::1 - - [14/Nov/2023:17:07:06 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:07:06 -0400"}
+info: ::1 - - [14/Nov/2023:17:07:35 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:07:35 -0400"}
+info: ::1 - - [14/Nov/2023:17:07:49 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:07:49 -0400"}
+info: ::1 - - [14/Nov/2023:17:10:27 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:10:27 -0400"}
+info: ::1 - - [14/Nov/2023:17:10:29 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:10:29 -0400"}
+info: ::1 - - [14/Nov/2023:17:11:51 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:11:51 -0400"}
+info: ::1 - - [14/Nov/2023:17:11:54 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:11:54 -0400"}
+info: ::1 - - [14/Nov/2023:17:13:16 +0000] "GET /users HTTP/1.1" 200 685 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:13:16 -0400"}
+info: ::1 - - [14/Nov/2023:17:17:49 +0000] "GET /users HTTP/1.1" 200 2 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:17:49 -0400"}
+info: ::1 - - [14/Nov/2023:17:18:00 +0000] "POST /roles HTTP/1.1" 201 90 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:18:00 -0400"}
+info: ::1 - - [14/Nov/2023:17:18:12 +0000] "POST /users HTTP/1.1" 201 287 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:18:12 -0400"}
+info: ::1 - - [14/Nov/2023:17:18:17 +0000] "GET /users HTTP/1.1" 200 115 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:18:17 -0400"}
+info: ::1 - - [14/Nov/2023:17:36:45 +0000] "POST /users HTTP/1.1" 201 328 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:36:45 -0400"}
+info: ::1 - - [14/Nov/2023:17:36:49 +0000] "GET /users HTTP/1.1" 200 229 "-" "PostmanRuntime/7.35.0" {"timestamp":"14/Nov/2023:13:36:49 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:16:40:42 +0000] "GET / HTTP/1.1" 200 11 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:12:40:42 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:16:40:56 +0000] "GET /users HTTP/1.1" 404 144 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:12:40:56 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:16:41:12 +0000] "GET /users HTTP/1.1" 404 144 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:12:41:12 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:16:41:49 +0000] "GET /users HTTP/1.1" 200 229 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:12:41:49 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:16:42:08 +0000] "GET / HTTP/1.1" 200 11 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:12:42:08 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:16:42:54 +0000] "GET / HTTP/1.1" 200 11 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:12:42:54 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:16:43:03 +0000] "GET /users HTTP/1.1" 200 229 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:12:43:03 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:16:45:20 +0000] "GET / HTTP/1.1" 200 11 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:12:45:20 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:16:45:23 +0000] "GET /users HTTP/1.1" 200 229 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:12:45:23 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:17:21:07 +0000] "GET / HTTP/1.1" 200 11 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:13:21:07 -0400"}
+info: ::1 - - [15/Nov/2023:17:24:08 +0000] "POST /users HTTP/1.1" 201 328 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:24:08 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:17:27:51 +0000] "POST /auth/login HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:27:51 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:17:28:20 +0000] "POST /auth/login HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:28:20 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:17:28:55 +0000] "POST /auth/login HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:28:55 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:17:29:58 +0000] "GET /auth/login HTTP/1.1" 404 149 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:13:29:58 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:17:30:08 +0000] "POST /auth/login HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:30:08 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:17:30:46 +0000] "POST /auth/login HTTP/1.1" 400 14 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:13:30:46 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:17:31:32 +0000] "POST /auth/login HTTP/1.1" 200 338 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:13:31:32 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:17:51:50 +0000] "GET /api/users HTTP/1.1" 200 2 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:13:51:50 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:17:52:21 +0000] "GET /api/roles HTTP/1.1" 404 148 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:13:52:21 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:17:52:35 +0000] "GET /api/roles HTTP/1.1" 404 148 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:13:52:35 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:17:52:47 +0000] "GET /api/users HTTP/1.1" 200 2 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:13:52:47 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:17:53:02 +0000] "GET /api/roles HTTP/1.1" 404 148 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:13:53:02 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:17:53:27 +0000] "GET /api/auth HTTP/1.1" 404 147 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:13:53:27 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:17:54:18 +0000] "GET /api/users HTTP/1.1" 200 2 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:13:54:18 -0400"}
+info: ::ffff:127.0.0.1 - - [15/Nov/2023:17:54:23 +0000] "GET /api/roles HTTP/1.1" 404 148 "-" "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)" {"timestamp":"15/Nov/2023:13:54:23 -0400"}
