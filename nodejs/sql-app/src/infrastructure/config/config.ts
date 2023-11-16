@@ -2,24 +2,27 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export const env = {
-    port: process.env.ENV_PORT || 3000,
+    port: process.env.PORT || 3000,
     environment: process.env.ENV || 'develop'
 };
+console.log(env);
 
 export const db = {
-    port: process.env.BD_PORT || 3306,
-    type: process.env.BD_TYPE || 'mysql',
-    username: process.env.BD_USER || 'root',
-    password: process.env.BD_PASS || 'root',
-    host: process.env.BD_HOST || 'localhost',
-    database: process.env.BD_NAME || 'app',
+    port: process.env.DB_PORT || 3306,
+    type: process.env.DB_TYPE || 'mysql',
+    username: process.env.DB_USER || 'root',
+    password: process.env.DB_PASS ||  'root',
+    host: process.env.DB_HOST || 'localhost',
+    database: process.env.DB_NAME || 'app',
 }
+console.log(db);
 
 export const lg = {
-    level: process.env.LG_LEVEL || 'info'
+    level: process.env.LOGGER_LEVEL || 'info'
 }
 
 export const jwt = {
-    secretKey: process.env.JWT_SECRET || 'your_secret_key',
-    expirationTime: process.env.JWT_TIME_EXPIRED || '1h'
+    secretKey:process.env.JWT_SECRET || 'your_secret_key',
+    expirationTime: process.env.JWT_EXPIRATION_TIME
 }
+console.log(jwt);
