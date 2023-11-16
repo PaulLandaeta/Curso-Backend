@@ -12,7 +12,7 @@ export const verifyTokenMiddleware = (req: Request, res: Response, next: NextFun
             if (err) {
                 return res.status(403).json({ message: "Token no válido" });
             }
-            req.user_id = user.userId;
+            req.userPepito = user.userId;
             next();
         });
     } else {

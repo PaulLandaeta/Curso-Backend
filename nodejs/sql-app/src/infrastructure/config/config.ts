@@ -11,7 +11,7 @@ export const db = {
     port: process.env.DB_PORT || 3306,
     type: process.env.DB_TYPE || 'mysql',
     username: process.env.DB_USER || 'root',
-    password: process.env.DB_PASS ||  'root',
+    password: process.env.DB_PASS || 'root',
     host: process.env.DB_HOST || 'localhost',
     database: process.env.DB_NAME || 'app',
 }
@@ -22,7 +22,10 @@ export const lg = {
 }
 
 export const jwt = {
-    secretKey:process.env.JWT_SECRET || 'your_secret_key',
+    secretKey: process.env.JWT_SECRET || 'your_secret_key',
     expirationTime: process.env.JWT_EXPIRATION_TIME
 }
-console.log(jwt);
+
+export const redis_env = {
+    url: process.env.RD_URL || 'localhost'
+}

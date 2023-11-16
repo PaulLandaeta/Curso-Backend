@@ -77,7 +77,7 @@ export class UserController {
     };
 
     public routes() {
-        this.router.get('/:id', verifyTokenMiddleware, this.getUserById.bind(this));
+        this.router.get('/:id', verifyTokenMiddleware , this.getUserById.bind(this));
         this.router.post('/', this.createUser.bind(this));
         this.router.get('/', this.getUsers.bind(this));
         this.router.delete('/:userId', this.deleteUser.bind(this));
