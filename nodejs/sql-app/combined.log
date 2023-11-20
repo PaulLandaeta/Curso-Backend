@@ -159,3 +159,72 @@ error: There is an error in the login process El email o el password son incorre
 info: ::1 - - [15/Nov/2023:17:23:32 +0000] "POST /auth/login HTTP/1.1" 400 52 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:23:32 -0400"}
 info: ::1 - - [15/Nov/2023:17:26:00 +0000] "POST /auth/login HTTP/1.1" 200 145 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:26:00 -0400"}
 info: ::1 - - [15/Nov/2023:17:26:16 +0000] "POST /auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:26:16 -0400"}
+info: ::1 - - [15/Nov/2023:17:40:23 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:40:23 -0400"}
+info: ::1 - - [15/Nov/2023:17:56:21 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:56:21 -0400"}
+info: Alguna información relevante {"timestamp":"15/Nov/2023:13:56:42 -0400"}
+info: ::1 - - [15/Nov/2023:17:56:42 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 145 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:56:42 -0400"}
+info: ::1 - - [15/Nov/2023:17:56:48 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:56:48 -0400"}
+info: Alguna información relevante {"timestamp":"15/Nov/2023:13:57:04 -0400"}
+info: ::1 - - [15/Nov/2023:17:57:04 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 145 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:57:04 -0400"}
+info: ::1 - - [15/Nov/2023:17:58:00 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:58:00 -0400"}
+info: ::1 - - [15/Nov/2023:17:58:01 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:58:01 -0400"}
+info: Alguna información relevante {"timestamp":"15/Nov/2023:13:58:15 -0400"}
+info: ::1 - - [15/Nov/2023:17:58:15 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 145 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:58:15 -0400"}
+info: ::1 - - [15/Nov/2023:17:59:41 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:59:41 -0400"}
+info: Alguna información relevante {"timestamp":"15/Nov/2023:13:59:43 -0400"}
+info: ::1 - - [15/Nov/2023:17:59:43 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 145 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:59:43 -0400"}
+info: ::1 - - [15/Nov/2023:17:59:44 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:59:44 -0400"}
+info: ::1 - - [15/Nov/2023:17:59:48 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:13:59:48 -0400"}
+info: ::1 - - [15/Nov/2023:18:00:05 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:14:00:05 -0400"}
+info: Alguna información relevante {"timestamp":"15/Nov/2023:14:00:09 -0400"}
+info: ::1 - - [15/Nov/2023:18:00:09 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 145 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:14:00:09 -0400"}
+info: Alguna información relevante {"timestamp":"15/Nov/2023:14:00:10 -0400"}
+info: ::1 - - [15/Nov/2023:18:00:10 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 145 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:14:00:10 -0400"}
+info: Alguna información relevante {"timestamp":"15/Nov/2023:14:00:11 -0400"}
+info: ::1 - - [15/Nov/2023:18:00:11 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 145 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:14:00:11 -0400"}
+info: Alguna información relevante {"timestamp":"15/Nov/2023:14:00:12 -0400"}
+info: ::1 - - [15/Nov/2023:18:00:12 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 145 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:14:00:12 -0400"}
+info: Alguna información relevante {"timestamp":"15/Nov/2023:14:00:13 -0400"}
+info: ::1 - - [15/Nov/2023:18:00:13 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 145 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:14:00:13 -0400"}
+info: Alguna información relevante {"timestamp":"15/Nov/2023:14:00:14 -0400"}
+info: ::1 - - [15/Nov/2023:18:00:14 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 200 145 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:14:00:14 -0400"}
+info: ::1 - - [15/Nov/2023:18:00:15 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:14:00:15 -0400"}
+info: ::1 - - [15/Nov/2023:18:00:16 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:14:00:16 -0400"}
+info: ::1 - - [15/Nov/2023:18:00:17 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:14:00:17 -0400"}
+info: ::1 - - [15/Nov/2023:18:00:18 +0000] "GET /api/users/563d0adf-469f-4d2f-977d-36c828b901ee HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"15/Nov/2023:14:00:18 -0400"}
+info: ::1 - - [16/Nov/2023:17:27:54 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:13:27:54 -0400"}
+info: ::1 - - [16/Nov/2023:17:30:29 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:13:30:29 -0400"}
+info: ::1 - - [16/Nov/2023:17:30:36 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:13:30:36 -0400"}
+info: ::1 - - [20/Nov/2023:16:59:38 +0000] "POST /auth/login HTTP/1.1" 404 150 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:12:59:38 -0400"}
+info: ::1 - - [20/Nov/2023:16:59:53 +0000] "POST /api/users HTTP/1.1" 400 132 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:12:59:53 -0400"}
+info: ::1 - - [20/Nov/2023:17:00:50 +0000] "POST /api/users HTTP/1.1" 400 122 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:00:50 -0400"}
+info: ::1 - - [20/Nov/2023:17:01:05 +0000] "POST /api/users HTTP/1.1" 201 349 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:01:05 -0400"}
+info: ::1 - - [20/Nov/2023:17:01:12 +0000] "POST /api/users HTTP/1.1" 400 101 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:01:12 -0400"}
+info: ::1 - - [20/Nov/2023:17:01:44 +0000] "POST /api/users HTTP/1.1" 400 135 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:01:44 -0400"}
+info: ::1 - - [20/Nov/2023:17:10:09 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:10:09 -0400"}
+info: ::1 - - [20/Nov/2023:17:10:10 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:10:10 -0400"}
+info: ::1 - - [20/Nov/2023:17:10:10 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:10:10 -0400"}
+info: ::1 - - [20/Nov/2023:17:10:11 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:10:11 -0400"}
+info: ::1 - - [20/Nov/2023:17:10:11 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:10:11 -0400"}
+info: ::1 - - [20/Nov/2023:17:10:12 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:10:12 -0400"}
+info: ::1 - - [20/Nov/2023:17:10:13 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:10:13 -0400"}
+info: ::1 - - [20/Nov/2023:17:10:13 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:10:13 -0400"}
+info: ::1 - - [20/Nov/2023:17:10:14 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:10:14 -0400"}
+info: ::1 - - [20/Nov/2023:17:10:14 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:10:14 -0400"}
+info: ::1 - - [20/Nov/2023:17:10:15 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:10:15 -0400"}
+info: ::1 - - [20/Nov/2023:17:10:15 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:10:15 -0400"}
+info: ::1 - - [20/Nov/2023:17:10:16 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:10:16 -0400"}
+info: ::1 - - [20/Nov/2023:17:10:17 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:10:17 -0400"}
+info: ::1 - - [20/Nov/2023:17:12:19 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:12:19 -0400"}
+info: ::1 - - [20/Nov/2023:17:12:20 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:12:20 -0400"}
+info: ::1 - - [20/Nov/2023:17:12:21 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:12:21 -0400"}
+info: ::1 - - [20/Nov/2023:17:12:23 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:12:23 -0400"}
+info: ::1 - - [20/Nov/2023:17:12:24 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:12:24 -0400"}
+info: ::1 - - [20/Nov/2023:17:17:13 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:17:13 -0400"}
+info: ::1 - - [20/Nov/2023:17:17:19 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:17:19 -0400"}
+info: ::1 - - [20/Nov/2023:17:17:20 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:17:20 -0400"}
+info: ::1 - - [20/Nov/2023:17:17:20 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:17:20 -0400"}
+info: ::1 - - [20/Nov/2023:17:17:21 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:17:21 -0400"}
+info: ::1 - - [20/Nov/2023:17:17:44 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:17:44 -0400"}
+info: ::1 - - [20/Nov/2023:17:29:31 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:29:31 -0400"}
+info: ::1 - - [20/Nov/2023:17:29:33 +0000] "POST /api/auth/login HTTP/1.1" 200 348 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:29:33 -0400"}
