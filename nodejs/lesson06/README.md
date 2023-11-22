@@ -4,8 +4,8 @@ Primero, necesitarás instalar swagger-ui-express y swagger-jsdoc, que son las b
 
 ```shell
 npm install swagger-ui-express swagger-jsdoc
-npm install @types/swagger-jsdoc
-npm install @types/swagger-ui-express
+npm install @types/swagger-jsdoc -D
+npm install @types/swagger-ui-express -D
 ```
 
 # Paso 2: Configurar Swagger JSDoc
