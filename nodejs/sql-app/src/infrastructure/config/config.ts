@@ -5,7 +5,6 @@ export const env = {
     port: process.env.PORT || 3000,
     environment: process.env.ENV || 'develop'
 };
-console.log(env);
 
 export const db = {
     port: process.env.DB_PORT || 3306,
@@ -15,7 +14,6 @@ export const db = {
     host: process.env.DB_HOST || 'localhost',
     database: process.env.DB_NAME || 'app',
 }
-console.log(db);
 
 export const lg = {
     level: process.env.LOGGER_LEVEL || 'info'
@@ -28,4 +26,9 @@ export const jwt = {
 
 export const redis_env = {
     url: process.env.RD_URL || 'localhost'
+}
+
+export const swagger_env = {
+    title: process.env.SW_TITLE || 'app',
+    version: process.env.SW_VERSION || '1.0.0'
 }

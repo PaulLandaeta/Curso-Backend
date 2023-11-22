@@ -8,12 +8,12 @@ import { UserDto } from "../dtos/user.dto";
 import { User } from "../../domain/models/user";
 import { Encrypt } from './../utils/encrypt';
 import bcrypt from 'bcrypt';
+import { RedisCacheService } from "../../infrastructure/cache/redis.cache";
 
 export class AuthService {
-    constructor(private userRepository: UserRepository, private encrypt: Encrypt) { }
+    constructor(private userRepository: UserRepository, private encrypt: Encrypt, private redisCacheService: RedisCacheService) { }
 
     async login(loginDTO: LoginDTO): Promise<UserDto> {
-        this.getCache();
         const userEntity: Partial<IUserEntity> = {
             email: loginDTO.email,
             passwordHash: loginDTO.password
@@ -28,18 +28,19 @@ export class AuthService {
         }
 
         const isPasswordValid = await bcrypt.compare(userEntity.passwordHash, user.passwordHash);
+        console.log("🚀 ~ file: authService.ts:31 ~ AuthService ~ login ~ isPasswordValid:", isPasswordValid)
         if (!isPasswordValid) {
             logger.error(`La contraseña del usuario es incorrecta`);
             throw new Error('El email o la contraseña son incorrectos');
         }
 
         const token = this.encrypt.encrypt({ userId: user.id });
+        console.log("🚀 ~ file: authService.ts:37 ~ AuthService ~ login ~ token:", token)
         user.token = token;
         user.lastLogin = new Date();
 
         const userUpdated = await this.userRepository.updateUser(user.id, user);
 
-        // TODO: se deberia modificar el token y tambien el lastlogin
         return {
             id: userUpdated.id,
             username: userUpdated.username,

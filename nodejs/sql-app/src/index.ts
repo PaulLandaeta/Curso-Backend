@@ -1,6 +1,9 @@
 import express, { Request, Response } from 'express';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
+import swaggerUi from 'swagger-ui-express';
+
+import swaggerSpec from './api/swagger/swaggerConfig';
 
 import { AppDataSource } from "./infrastructure/config/dataSource";
 import logger from './infrastructure/logger/logger';
@@ -15,6 +18,9 @@ AppDataSource.initialize().then(() => {
     const PORT = env.port;
 
     app.use(express.json());
+
+    app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
     app.use(limiter);
     // Setup Logger 
     app.use(morgan('combined', { stream: { write: (message: string) => logger.info(message.trim()) } }));
@@ -22,6 +28,8 @@ AppDataSource.initialize().then(() => {
     app.get('/', (req: Request, res: Response) => {
         res.send('Servidor Up');
     });
+
+
 
     app.use('/api', apiRoutes());
 

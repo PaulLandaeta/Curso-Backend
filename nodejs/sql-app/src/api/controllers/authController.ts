@@ -1,7 +1,6 @@
 import { Request, Response, Router } from 'express';
 import { LoginDTO } from '../../app/dtos/login.dto';
 import { AuthService } from '../../app/services/authService';
-import { log } from 'console';
 import logger from '../../infrastructure/logger/logger';
 
 export class AuthController {
@@ -13,7 +12,47 @@ export class AuthController {
         this.router = Router();
         this.routes();
     }
-
+    /**
+     * @swagger
+     * /login:
+     *   post:
+     *     summary: Inicia sesión de un usuario en sql app
+     *     tags: [Autenticación]
+     *     requestBody:
+     *       required: true
+     *       content:
+     *         application/json:
+     *           schema:
+     *             $ref: '#/components/schemas/LoginCredentials'
+     *     responses:
+     *       200:
+     *         description: Inicio de sesión exitoso
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 token:
+     *                   type: string
+     *                 user:
+     *                   type: object
+     *                   properties:
+     *                     id:
+     *                       type: string
+     *                     username:
+     *                       type: string
+     *       400:
+     *         description: Error en la solicitud
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 message:
+     *                   type: string
+     *       401:
+     *         description: Credenciales inválidas
+     */
     public async login(req: Request, res: Response): Promise<Response> {
         try {
             const loginDTO: LoginDTO = req.body;
