@@ -19,9 +19,6 @@ export class AuthService {
             passwordHash: loginDTO.password
         };
         const user: User = await this.userRepository.findByEmail(userEntity.email);
-        console.log("🚀 ~ file: authService.ts:32 ~ AuthService ~ login ~ user:", user)
-        // const USER_KEY = 'USER'
-        // this.redisCacheService.set(`${USER_KEY}:${user.id}`, JSON.stringify(user));
         if (!user) {
             logger.error(`El usuario con email: ${userEntity.email} no existe`);
             throw new Error('El email o la contraseña son incorrectos');
@@ -34,12 +31,13 @@ export class AuthService {
             throw new Error('El email o la contraseña son incorrectos');
         }
 
-        const token = this.encrypt.encrypt({ userId: user.id });
+        const token = await this.encrypt.encrypt({ userId: user.id });
         console.log("🚀 ~ file: authService.ts:37 ~ AuthService ~ login ~ token:", token)
         user.token = token;
         user.lastLogin = new Date();
 
         const userUpdated = await this.userRepository.updateUser(user.id, user);
+        console.log("🚀 ~ file: authService.ts:40 ~ AuthService ~ login ~ userUpdated:", userUpdated)
 
         return {
             id: userUpdated.id,

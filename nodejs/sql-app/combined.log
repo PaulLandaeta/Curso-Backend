@@ -1,0 +1,12 @@
+info: ::1 - - [23/Nov/2023:00:26:14 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"22/Nov/2023:20:26:14 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"22/Nov/2023:21:23:42 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"22/Nov/2023:21:30:35 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"23/Nov/2023:12:56:59 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"23/Nov/2023:12:57:17 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"23/Nov/2023:13:53:57 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"23/Nov/2023:13:54:21 -0400"}
+error: La contraseña del usuario es incorrecta {"timestamp":"23/Nov/2023:13:54:21 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"23/Nov/2023:13:58:42 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"23/Nov/2023:13:59:41 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"23/Nov/2023:13:59:59 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"23/Nov/2023:14:00:10 -0400"}

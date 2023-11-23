@@ -1,0 +1,11 @@
+error: El usuario con email: test@example.com no existe {"timestamp":"22/Nov/2023:21:23:42 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"22/Nov/2023:21:30:35 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"23/Nov/2023:12:56:59 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"23/Nov/2023:12:57:17 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"23/Nov/2023:13:53:57 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"23/Nov/2023:13:54:21 -0400"}
+error: La contraseña del usuario es incorrecta {"timestamp":"23/Nov/2023:13:54:21 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"23/Nov/2023:13:58:42 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"23/Nov/2023:13:59:41 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"23/Nov/2023:13:59:59 -0400"}
+error: El usuario con email: test@example.com no existe {"timestamp":"23/Nov/2023:14:00:10 -0400"}
