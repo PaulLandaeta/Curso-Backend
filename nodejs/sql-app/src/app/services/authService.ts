@@ -20,8 +20,8 @@ export class AuthService {
         };
         const user: User = await this.userRepository.findByEmail(userEntity.email);
         console.log("🚀 ~ file: authService.ts:32 ~ AuthService ~ login ~ user:", user)
-        const USER_KEY = 'USER'
-        this.redisCacheService.set(`${USER_KEY}:${user.id}`, JSON.stringify(user));
+        // const USER_KEY = 'USER'
+        // this.redisCacheService.set(`${USER_KEY}:${user.id}`, JSON.stringify(user));
         if (!user) {
             logger.error(`El usuario con email: ${userEntity.email} no existe`);
             throw new Error('El email o la contraseña son incorrectos');

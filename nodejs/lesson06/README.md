@@ -48,7 +48,7 @@ Ahora, necesitas configurar tu aplicación Express para que sirva la UI de Swagg
 ```ts 
 import express from 'express';
 import swaggerUi from 'swagger-ui-express';
-import swaggerSpec from './swagger/swaggerConfig';
+import swaggerSpec from './api/swagger/swaggerConfig';
 
 const app = express();
 

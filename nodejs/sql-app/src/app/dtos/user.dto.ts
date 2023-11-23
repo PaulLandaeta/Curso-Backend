@@ -3,5 +3,5 @@ export interface UserDto {
     username: string;
     email: string;
     lastLogin: Date | null;
-    token: string | null;
+    token?: string | null;
 }
