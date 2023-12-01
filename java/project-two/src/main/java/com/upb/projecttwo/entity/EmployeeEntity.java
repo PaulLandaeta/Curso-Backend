@@ -1,15 +1,18 @@
-package com.upb.projecttwo.models;
+package com.upb.projecttwo.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-@JsonIgnoreProperties({"deparmentId","emailId"})
-public class Employee {
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "tbl_employee")
+public class EmployeeEntity {
+    @Id
     private String employeId;
     private String name;
     private String lastName;
     private String emailId;
-
     private String deparmentId;
 
     public String getEmployeId() {
