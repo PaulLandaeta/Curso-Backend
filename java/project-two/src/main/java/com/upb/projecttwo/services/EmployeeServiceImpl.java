@@ -1,5 +1,6 @@
 package com.upb.projecttwo.services;
 
+import com.upb.projecttwo.entity.EmployeeEntity;
 import com.upb.projecttwo.error.EmployeeNotFoundException;
 import com.upb.projecttwo.models.Employee;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -38,13 +39,14 @@ public class EmployeeServiceImpl implements EmployeeService{
     }
 
     @Override
-    public void delete(String id) {
+    public String delete(String id) {
         Employee employeeDeleted = employeeList
                     .stream()
                     .filter(employee -> employee.getEmployeId().equalsIgnoreCase(id))
                     .findFirst()
                     .orElseThrow(() -> new EmployeeNotFoundException("Employee not found with ID "+id));
         employeeList.remove(employeeDeleted);
+        return "Employee deleted "+ id;
     }
 
 

@@ -11,5 +11,5 @@ public interface EmployeeService {
 
     List<Employee> getEmployees();
 
-    void delete(String id);
+    String delete(String id);
 }
