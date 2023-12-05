@@ -25,4 +25,10 @@ public class ProductController {
         ProductResponse productResponse = productService.getProductById(productId);
         return new ResponseEntity<>(productResponse, HttpStatus.OK);
     }
+
+    @PutMapping("/{id}/{quantity}")
+    public void discountQuantity(@PathVariable("id") long productId,
+                                 @PathVariable long quantity) {
+        productService.discountQuantity(productId, quantity);
+    }
 }

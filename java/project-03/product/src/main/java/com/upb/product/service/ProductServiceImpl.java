@@ -42,4 +42,20 @@ public class ProductServiceImpl implements ProductService{
 
         return productResponse;
     }
+
+    @Override
+    public void discountQuantity(long productId, long quantity) {
+        log.info("Product Service - DiscountQuantity: Updating Product with id: " + productId);
+        Product product = productRepository
+                .findById(productId)
+                .orElseThrow(
+                        () -> new ProductServiceCustomExpection("Product Error No seas Gil no existe ese Error", "404")
+                );
+        if(product.getQuantity()<quantity){
+            throw new ProductServiceCustomExpection("No existe esa cantidad", "400");
+        }
+
+        product.setQuantity(product.getQuantity()-quantity);
+        productRepository.save(product);
+    }
 }
