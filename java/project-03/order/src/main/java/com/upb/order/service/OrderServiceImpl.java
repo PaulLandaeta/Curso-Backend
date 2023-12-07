@@ -1,6 +1,6 @@
 package com.upb.order.service;
 
-import com.upb.order.client.ProductService;
+import com.upb.order.external.client.ProductService;
 import com.upb.order.entity.Order;
 import com.upb.order.model.OrderRequest;
 import com.upb.order.repository.OrderRepository;
