@@ -1,0 +1,16 @@
+version: '3'
+services:
+  serviceregistry:
+    image: 'plandaeta/serviceregistry:0.0.1'
+    container_name: serviceregistry
+    ports:
+      - '8761:8761'
+  cloudgateway:
+    image: 'plandaeta/cloudgateway:0.0.1'
+    container_name: cloudgateway
+    ports:
+      - '9090:9090'
+    environment:
+      - EUREKA_SERVER_ADDRESS=http://serviceregistry:8761/eureka
+    depends_on:
+      - serviceregistry
