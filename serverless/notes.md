@@ -55,9 +55,9 @@ resources
 
 ### Crear un Recurso:
 Ahora, crea un recurso (por ejemplo, un punto de enlace) en tu API. Reemplaza [PARENT_ID] con el ID del recurso raíz que obtuviste en el paso anterior:
-
+```
 aws --endpoint-url=http://localhost:4566 apigateway create-resource --rest-api-id [API_ID] --parent-id [PARENT_ID] --path-part miRecurso
-
+```
 ```
 {
     "id": "0uv0m87oma",
