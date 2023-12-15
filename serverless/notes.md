@@ -1,4 +1,10 @@
 lambda id 
+
+```
+aws --endpoint-url=http://localhost:4566 lambda create-function --function-name miFuncionLambda \
+--zip-file fileb://function.zip --handler index.handler --runtime nodejs12.x --role arn:aws:iam::123456789012:role/irrelevante
+
+```
 ```
 {
     "id": "nnkypk6w2f",
