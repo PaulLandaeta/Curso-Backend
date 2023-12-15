@@ -96,3 +96,9 @@ Finalmente, debes desplegar tu API para que esté accesible. Crea un despliegue 
 aws --endpoint-url=http://localhost:4566 apigateway create-deployment --rest-api-id [API_ID] --stage-name test
 
 ```
+
+consumir el endpoint
+
+```
+http://localhost:4566/restapis/[API_ID]/test/_user_request_/miRecurso
+```
